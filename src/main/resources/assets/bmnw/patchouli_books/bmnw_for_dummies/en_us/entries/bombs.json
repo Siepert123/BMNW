@@ -1,0 +1,58 @@
+{
+  "name": "Bombs & Weapons",
+  "icon": "bmnw:lil_bro",
+  "category": "bmnw:the_book",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Welcome to the chapter about nuclear bombs!$(br)Get the latest information about weapons here!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "bmnw:crafting/tools/detonator",
+      "title": "Detonator",
+      "text": "To start using bombs, you'll first need a $(item)$(l)Detonator$() (see crafting recipe above).$(br)By shift-right-clicking a block, you set the $(l)targeted position$(), which it will attempt to detonate on right-click!$(br)If the targeted position is invalid, nothing will happen."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "bmnw:crafting/weapons/incendiary_charge",
+      "title": "Incendiary Charge",
+      "text": "This nice looking bomb isn't all too destructive, but has one special property: its $(l)incendiary$()!$(br)This means that detonating it sets the surrounding area on fire. Pretty cool, right?"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "bmnw:crafting/weapons/nuclear_charge",
+      "title": "Nuclear Charge",
+      "text": "Ah, the Nuclear Charge. A classic, it has been here since the beginning!$(br)This nuclear bomb is the weakest variant, with a blast radius of $(l)16$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "bmnw:crafting/weapons/little_boy",
+      "title": "Little Boy",
+      "text": "The Little Boy is the strongest survival-obtainable bomb.$(br)Not extremely strong, but still quite powerful with a blast radius of $(l)64$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "bmnw:caseoh"
+      },
+      "link_recipe": true,
+      "text": "This bomb is very strong!$(br)Not recommended for weak computers, as its blast radius is $(l)256$() and the explosion algorithm is to cry about."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "bmnw:dud"
+      },
+      "link_recipe": true,
+      "text": "The dropped soulfire bomb is uncraftable, but can be naturally found throughout the world of Minecraft.$(br)Detonating it creates a soulfire mushroom cloud, and the blast doesn't leave any nuclear remains!$(br)The blast radius of $(l)32$() still is quite destructive."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "tag": "bmnw:nuclear_remains"
+      },
+      "text": "Nuclear bombs are no fun without any drawbacks! That's why they leave all these $(item)$(l)nuclear remains$() everywhere.$(br)The cooled down variants aren't dangerous, but the hot ones are very radioactive and set you on fire!"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "bmnw:weak_rad_away"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "Y": {
+      "tag": "forge:dyes/yellow"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "SYS",
+    "R#R",
+    "SYS"
+  ],
+  "result": {
+    "item": "bmnw:rad_away"
+  },
+  "show_notification": true
+}

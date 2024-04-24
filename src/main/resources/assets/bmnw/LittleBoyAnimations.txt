@@ -1,0 +1,8 @@
+
+public static final AnimationDefinition ENTITY_LITTLE_BOY_FALLING = AnimationDefinition.Builder.withLength(2.5f)
+.addAnimation("bone",
+	new AnimationChannel(AnimationChannel.Targets.ROTATION,
+		new Keyframe(0f, KeyframeAnimations.degreeVec(0f, 0f, 0f),
+			AnimationChannel.Interpolations.CATMULLROM),
+		new Keyframe(2.5f, KeyframeAnimations.degreeVec(75f, 0f, 0f),
+			AnimationChannel.Interpolations.CATMULLROM))).build();

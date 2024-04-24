@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:plates/plastic"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "bmnw:insulator",
+    "count": 8
+  },
+  "show_notification": true
+}

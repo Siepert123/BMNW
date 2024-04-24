@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "steam_switch_small",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "bmnw:steam_pipe"
+    },
+    "L": {
+      "item": "minecraft:lever"
+    }
+  },
+  "pattern": [
+    " #",
+    "#L",
+    " #"
+  ],
+  "result": {
+    "item": "bmnw:steam_switch_small"
+  },
+  "show_notification": true
+}

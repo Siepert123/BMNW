@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "alloy_blast_furnace",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:nether_brick"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    "III",
+    "#F#",
+    "###"
+  ],
+  "result": {
+    "item": "bmnw:alloy_blast_furnace"
+  },
+  "show_notification": true
+}

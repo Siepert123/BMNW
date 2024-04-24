@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "bmnw:uranium_235_ingot"
+    },
+    "B": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "pattern": [
+    "###",
+    "#B#",
+    "###"
+  ],
+  "result": {
+    "item": "bmnw:nuclear_charge",
+    "count": 1
+  },
+  "show_notification": true
+}

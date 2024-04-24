@@ -1,0 +1,14 @@
+{
+  "type": "bmnw:alloying",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/thorium"
+    },
+    {
+      "tag": "forge:ingots/thorium"
+    }
+  ],
+  "result": {
+    "item": "bmnw:thorium_232_ingot"
+  }
+}

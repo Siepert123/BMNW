@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "group": "bmnw:raw_thorium",
+  "key": {
+    "#": {
+      "item": "bmnw:raw_thorium_block"
+    }
+  },
+  "pattern": [
+    "#"
+  ],
+  "result": {
+    "count": 9,
+    "item": "bmnw:raw_thorium"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "steam_pipe",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "bmnw:steam_pipe",
+    "count": 16
+  },
+  "show_notification": true
+}

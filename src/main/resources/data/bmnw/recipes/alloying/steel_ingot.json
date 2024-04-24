@@ -1,0 +1,14 @@
+{
+  "type": "bmnw:alloying",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "bmnw:valid_alloy_blast_furnace_ingredients/iron"
+    }
+  ],
+  "result": {
+    "item": "bmnw:steel_ingot"
+  }
+}

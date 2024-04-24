@@ -1,0 +1,10 @@
+{
+  "parent": "template:block/alt_orientable_block",
+  "textures": {
+    "top": "bmnw:block/blast_furnace/top",
+    "bottom": "bmnw:block/blast_furnace/bottom",
+    "side": "bmnw:block/blast_furnace/side",
+    "particle": "bmnw:block/blast_furnace/side",
+    "front": "bmnw:block/blast_furnace/front"
+  }
+}

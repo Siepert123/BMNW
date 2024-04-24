@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:tnt"
+    },
+    "B": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "pattern": [
+    "###",
+    "#B#",
+    "###"
+  ],
+  "result": {
+    "item": "bmnw:incendiary_charge",
+    "count": 1
+  },
+  "show_notification": true
+}

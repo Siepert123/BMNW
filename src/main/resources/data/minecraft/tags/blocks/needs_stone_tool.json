@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "bmnw:obsidian_gravel",
+    "bmnw:bismuth_block",
+    "bmnw:raw_bismuth_block",
+    "bmnw:alloy_blast_furnace",
+    "bmnw:hot_nuclear_remains",
+    "bmnw:nuclear_remains",
+    "bmnw:hot_nuclear_diamond_ore_remains",
+    "bmnw:nuclear_diamond_ore_remains",
+    "bmnw:hot_nuclear_emerald_ore_remains",
+    "bmnw:nuclear_emerald_ore_remains",
+    "bmnw:test_particle_spawner",
+    "bmnw:incendiary_charge",
+    "bmnw:nuclear_charge",
+    "bmnw:lil_bro",
+    "bmnw:caseoh",
+    "bmnw:gold_lined_door",
+    "bmnw:lv_machine_casing",
+    "bmnw:steam_cap",
+    "bmnw:steam_outlet",
+    "bmnw:steam_switch_small",
+    "bmnw:steam_pipe"
+  ]
+}

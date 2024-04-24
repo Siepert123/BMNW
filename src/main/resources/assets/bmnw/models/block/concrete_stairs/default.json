@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "bmnw:block/concrete",
+    "side": "bmnw:block/concrete",
+    "top": "bmnw:block/concrete"
+  }
+}

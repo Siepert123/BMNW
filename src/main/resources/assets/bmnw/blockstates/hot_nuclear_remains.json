@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bmnw:block/nuclear_remains/hot/default"
+      },
+      {
+        "model": "bmnw:block/nuclear_remains/hot/stretched"
+      },
+      {
+        "model": "bmnw:block/nuclear_remains/hot/bland"
+      }
+    ]
+  }
+}

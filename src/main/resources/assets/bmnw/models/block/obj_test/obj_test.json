@@ -1,0 +1,9 @@
+{
+  "loader": "forge:obj",
+  "flip_v": true,
+  "model": "bmnw:models/block/obj_test.obj",
+  "textures": {
+    "texture0": "bmnw:block/obj_test",
+    "particle": "minecraft:block/dirt"
+  }
+}

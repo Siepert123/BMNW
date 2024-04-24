@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:bread"
+    },
+    "T": {
+      "item": "bmnw:uranium_235_ingot"
+    }
+  },
+  "pattern": [
+    "T",
+    "#",
+    "T"
+  ],
+  "result": {
+    "item": "bmnw:uranium_sandwich"
+  },
+  "show_notification": true
+}

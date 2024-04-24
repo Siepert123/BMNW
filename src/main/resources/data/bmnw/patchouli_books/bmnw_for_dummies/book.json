@@ -1,0 +1,15 @@
+{
+  "name": "BMNW for Dummies",
+  "landing_text": "Don't know how the mod works into fine detail?$(br)This book will help!",
+  "pamphlet": true,
+  "creative_tab": "bmnw:bmnw_tab",
+  "subtitle": "An introduction to the mod",
+  "use_resource_pack": true,
+  "book_texture": "patchouli:textures/gui/book_green.png",
+  "model": "patchouli:book_green",
+  "show_progress": false,
+  "use_blocky_font": false,
+  "text_overflow_mode": "resize",
+  "flip_sound": "bmnw:usage.item.page_turn",
+  "advancements_tab": "bmnw:main/root"
+}

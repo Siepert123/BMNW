@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steel"
+    },
+    "T": {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+  "pattern": [
+    "T",
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "bmnw:detonator"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "bmnw:block/obj_models/json/scaffold"
+    },
+    "axis=x": {
+      "model": "bmnw:block/obj_models/json/scaffold",
+      "y": 90
+    }
+  }
+}

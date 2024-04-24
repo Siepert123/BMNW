@@ -1,0 +1,20 @@
+{
+  "category": "building",
+  "group": "bmnw:raw_uranium_block",
+  "key": {
+    "#": {
+      "item": "bmnw:raw_uranium"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "bmnw:raw_uranium_block"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

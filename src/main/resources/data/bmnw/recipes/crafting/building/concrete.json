@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "minecraft:sand"
+    },
+    "G": {
+      "item": "minecraft:gravel"
+    },
+    "#": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S#G",
+    "GGG"
+  ],
+  "result": {
+    "item": "bmnw:concrete",
+    "count": 8
+  },
+  "show_notification": true
+}

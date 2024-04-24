@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "bmnw:uranium_238_ingot"
+    },
+    "B": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "pattern": [
+    "###",
+    "#B#",
+    "###"
+  ],
+  "result": {
+    "item": "bmnw:lil_bro",
+    "count": 1
+  },
+  "show_notification": true
+}

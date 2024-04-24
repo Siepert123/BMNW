@@ -1,0 +1,14 @@
+{
+  "values": [
+    "bmnw:obsidian_gravel",
+    "bmnw:concrete",
+    "bmnw:concrete_stairs",
+    "bmnw:concrete_slab",
+    "bmnw:concrete_bricks",
+    "bmnw:concrete_bricks_stairs",
+    "bmnw:concrete_bricks_slab",
+    "bmnw:foundation_concrete",
+    "bmnw:steel_reinforced_glass",
+    "bmnw:water_seal_hatch"
+  ]
+}

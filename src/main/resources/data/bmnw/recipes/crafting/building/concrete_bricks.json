@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "bmnw:concrete"
+    },
+    "C": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#C#",
+    " # "
+  ],
+  "result": {
+    "item": "bmnw:concrete_bricks",
+    "count": 4
+  },
+  "show_notification": true
+}

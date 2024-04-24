@@ -1,0 +1,14 @@
+{
+  "type": "bmnw:alloying",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/uranium"
+    },
+    {
+      "item": "bmnw:uranium_235_ingot"
+    }
+  ],
+  "result": {
+    "item": "bmnw:uranium_238_ingot"
+  }
+}

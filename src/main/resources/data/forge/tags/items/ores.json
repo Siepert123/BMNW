@@ -1,0 +1,12 @@
+{
+  "values": [
+    "bmnw:deepslate_uranium_ore",
+    "bmnw:uranium_ore",
+    "bmnw:deepslate_thorium_ore",
+    "bmnw:thorium_ore",
+    "bmnw:hot_nuclear_diamond_ore_remains",
+    "bmnw:nuclear_diamond_ore_remains",
+    "bmnw:hot_nuclear_emerald_ore_remains",
+    "bmnw:nuclear_emerald_ore_remains"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "bmnw:block/stone_steam_hotspot",
+    "side": "block/stone",
+    "bottom": "bmnw:block/stone_steam_hotspot"
+  }
+}

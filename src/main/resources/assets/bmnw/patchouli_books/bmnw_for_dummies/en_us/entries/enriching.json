@@ -1,0 +1,17 @@
+{
+  "name": "Enriching & You",
+  "icon": "bmnw:uranium_235_ingot",
+  "category": "bmnw:the_book",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Psst hey this is WIP"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "bmnw:crafting/tools/geiger_counter",
+      "title": "Geiger Counter",
+      "text": "It counts geigers what did you expect"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "bmnw:concrete_bricks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "item": "bmnw:concrete_bricks_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

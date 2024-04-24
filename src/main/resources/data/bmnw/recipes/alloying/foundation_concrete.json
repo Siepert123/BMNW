@@ -1,0 +1,15 @@
+{
+  "type": "bmnw:alloying",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "item": "bmnw:concrete"
+    }
+  ],
+  "result": {
+    "item": "bmnw:foundation_concrete",
+    "count": 2
+  }
+}

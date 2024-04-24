@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "steam_cap",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steel"
+    },
+    "I": {
+      "item": "bmnw:steam_pipe"
+    }
+  },
+  "pattern": [
+    " I ",
+    "#I#",
+    "# #"
+  ],
+  "result": {
+    "item": "bmnw:steam_cap"
+  },
+  "show_notification": true
+}

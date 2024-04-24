@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bmnw:block/obj_models/json/fluid_depositor",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "bmnw:block/obj_models/json/fluid_depositor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bmnw:block/obj_models/json/fluid_depositor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bmnw:block/obj_models/json/fluid_depositor",
+      "y": 270
+    }
+  }
+}

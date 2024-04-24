@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "group": "bmnw:conductive_copper_nugget",
+  "key": {
+    "#": {
+      "item": "bmnw:conductive_copper_ingot"
+    }
+  },
+  "pattern": [
+    "#"
+  ],
+  "result": {
+    "count": 9,
+    "item": "bmnw:conductive_copper_nugget"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

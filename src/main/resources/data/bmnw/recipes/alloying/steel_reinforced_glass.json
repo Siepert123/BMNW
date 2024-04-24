@@ -1,0 +1,15 @@
+{
+  "type": "bmnw:alloying",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "item": "minecraft:glass"
+    }
+  ],
+  "result": {
+    "item": "bmnw:steel_reinforced_glass",
+    "count": 2
+  }
+}

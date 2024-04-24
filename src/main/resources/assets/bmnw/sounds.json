@@ -1,0 +1,127 @@
+{
+  "event.explosion.strong": {
+    "subtitle": "sounds.bmnw.strong_explosion",
+    "sounds": [
+      "bmnw:weapon/strong_explosion"
+    ]
+  },
+  "event.player.vomit": {
+    "subtitle": "sounds.bmnw.vomit",
+    "sounds": [
+      "bmnw:player/vomit"
+    ]
+  },
+  "ambient.machine.groan": {
+    "subtitle": "sounds.bmnw.machine_groan",
+    "sounds": [
+      "bmnw:machine/machine_groan_1",
+      "bmnw:machine/machine_groan_2",
+      "bmnw:machine/machine_groan_3"
+    ]
+  },
+  "usage.machine.industrial_lever": {
+    "subtitle": "sounds.bmnw.industrial_lever",
+    "sounds": [
+      "bmnw:block/industrial_lever"
+    ]
+  },
+  "usage.item.page_turn": {
+    "subtitle": "sounds.bmnw.page_turn",
+    "sounds": [
+      "bmnw:misc/page_1",
+      "bmnw:misc/page_2"
+    ]
+  },
+  "event.machine.industrial_lever_abort": {
+    "subtitle": "sounds.bmnw.industrial_lever_abort",
+    "sounds": [
+      "bmnw:block/industrial_lever_abort"
+    ]
+  },
+  "usage.machine.industrial_slider": {
+    "subtitle": "sounds.bmnw.industrial_slider",
+    "sounds": [
+      "bmnw:block/industrial_slider"
+    ]
+  },
+  "usage.block.gold_lined_door_open": {
+    "subtitle": "sounds.bmnw.door_open",
+    "sounds": [
+      "bmnw:block/gold_lined_door_open"
+    ]
+  },
+  "usage.block.gold_lined_door_close": {
+    "subtitle": "sounds.bmnw.door_close",
+    "sounds": [
+      "bmnw:block/gold_lined_door_close"
+    ]
+  },
+  "usage.block.water_seal_open": {
+    "subtitle": "sounds.bmnw.hatch_open",
+    "sounds": [
+      "bmnw:block/water_seal_open"
+    ]
+  },
+  "usage.block.water_seal_close": {
+    "subtitle": "sounds.bmnw.hatch_close",
+    "sounds": [
+      "bmnw:block/water_seal_close"
+    ]
+  },
+  "usage.machine.gpins_up": {
+    "subtitle": "sounds.bmnw.gpins_up",
+    "sounds": [
+      "bmnw:machine/gpins_up"
+    ]
+  },
+  "usage.machine.gpins_rotate": {
+    "subtitle": "sounds.bmnw.gpins_rotate",
+    "sounds": [
+      "bmnw:machine/gpins_rotate"
+    ]
+  },
+  "usage.machine.gpins_down": {
+    "subtitle": "sounds.bmnw.gpins_down",
+    "sounds": [
+      "bmnw:machine/gpins_down"
+    ]
+  },
+  "usage.machine.lever_dud": {
+    "subtitle": "sounds.bmnw.lever_dud",
+    "sounds": [
+      "bmnw:block/lever_dud_1",
+      "bmnw:block/lever_dud_2",
+      "bmnw:block/lever_dud_3"
+    ]
+  },
+  "usage.machine.steam_lever": {
+    "subtitle": "sounds.bmnw.lever_used",
+    "sounds": [
+      "bmnw:machine/steam_control_lever"
+    ]
+  },
+  "event.machine.move": {
+    "subtitle": "sounds.bmnw.machine_moves",
+    "sounds": [
+      "bmnw:machine/machine_move"
+    ]
+  },
+  "event.machine.movement_stuck": {
+    "subtitle": "sounds.bmnw.machine_gets_stuck",
+    "sounds": [
+      "bmnw:machine/machine_stuck"
+    ]
+  },
+  "loop.machine.steam_outlet": {
+    "subtitle": "sounds.bmnw.steam_loop",
+    "sounds": [
+      "bmnw:machine/steam_outlet_loop"
+    ]
+  },
+  "loop.machine.steam_loop": {
+    "subtitle": "sounds.bmnw.steam_loop",
+    "sounds": [
+      "bmnw:machine/steam_loop"
+    ]
+  }
+}

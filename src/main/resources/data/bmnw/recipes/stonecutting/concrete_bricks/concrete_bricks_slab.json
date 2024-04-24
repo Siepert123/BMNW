@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "bmnw:concrete_bricks"
+  },
+  "result": "bmnw:concrete_bricks_slab"
+}

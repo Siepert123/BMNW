@@ -1,0 +1,20 @@
+{
+  "category": "building",
+  "group": "bmnw:thorium_block",
+  "key": {
+    "#": {
+      "item": "bmnw:thorium_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "bmnw:thorium_block"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

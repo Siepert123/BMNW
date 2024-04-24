@@ -1,0 +1,27 @@
+{
+  "feature": "bmnw:bismuth_crystal_vein",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 2
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "absolute": -30
+        },
+        "min_inclusive": {
+          "absolute": -50
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

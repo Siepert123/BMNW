@@ -1,0 +1,20 @@
+{
+  "category": "building",
+  "group": "bmnw:raw_bismuth_block",
+  "key": {
+    "#": {
+      "item": "bmnw:raw_bismuth"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "bmnw:raw_bismuth_block"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

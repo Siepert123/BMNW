@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "group": "bmnw:steel_nugget",
+  "key": {
+    "#": {
+      "item": "bmnw:steel_ingot"
+    }
+  },
+  "pattern": [
+    "#"
+  ],
+  "result": {
+    "count": 9,
+    "item": "bmnw:steel_nugget"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

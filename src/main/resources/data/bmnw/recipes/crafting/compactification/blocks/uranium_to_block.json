@@ -1,0 +1,20 @@
+{
+  "category": "building",
+  "group": "bmnw:uranium_block",
+  "key": {
+    "#": {
+      "item": "bmnw:uranium_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "bmnw:uranium_block"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

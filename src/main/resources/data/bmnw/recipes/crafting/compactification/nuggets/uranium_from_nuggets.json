@@ -1,0 +1,20 @@
+{
+  "category": "misc",
+  "group": "bmnw:uranium_ingot",
+  "key": {
+    "#": {
+      "item": "bmnw:uranium_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "bmnw:uranium_ingot"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

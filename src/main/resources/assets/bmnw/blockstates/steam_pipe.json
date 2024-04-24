@@ -1,0 +1,75 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "bmnw:block/steam/steam_pipe/middle"
+      }
+    },
+    {
+      "apply": {
+        "model": "bmnw:block/steam/steam_pipe/side",
+        "uvlock": true
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bmnw:block/steam/steam_pipe/side",
+        "uvlock": true,
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bmnw:block/steam/steam_pipe/side",
+        "uvlock": true,
+        "y": 180
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bmnw:block/steam/steam_pipe/side",
+        "uvlock": true,
+        "y": 270
+      },
+      "when": {
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bmnw:block/steam/steam_pipe/up",
+        "uvlock": true
+      },
+      "when": {
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bmnw:block/steam/steam_pipe/down",
+        "uvlock": true
+      },
+      "when": {
+        "down": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "bmnw:block/steam/steam_pipe/support",
+        "uvlock": true
+      },
+      "when": {
+        "has_support": "true"
+      }
+    }
+  ]
+}

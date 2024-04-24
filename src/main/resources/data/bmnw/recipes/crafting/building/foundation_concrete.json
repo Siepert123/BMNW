@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_bars"
+    },
+    "C": {
+      "item": "bmnw:concrete"
+    }
+  },
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "item": "bmnw:foundation_concrete",
+    "count": 2
+  },
+  "show_notification": true
+}

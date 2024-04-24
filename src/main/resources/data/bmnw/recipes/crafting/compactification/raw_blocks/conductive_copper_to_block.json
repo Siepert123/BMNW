@@ -1,0 +1,20 @@
+{
+  "category": "building",
+  "group": "bmnw:raw_conductive_copper_block",
+  "key": {
+    "#": {
+      "item": "bmnw:raw_conductive_copper"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "bmnw:raw_conductive_copper_block"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

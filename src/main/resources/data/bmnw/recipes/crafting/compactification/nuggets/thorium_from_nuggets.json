@@ -1,0 +1,20 @@
+{
+  "category": "misc",
+  "group": "bmnw:thorium_ingot",
+  "key": {
+    "#": {
+      "item": "bmnw:thorium_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "bmnw:thorium_ingot"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

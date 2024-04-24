@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bmnw:block/industrial_furnace/off",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "bmnw:block/industrial_furnace/off",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bmnw:block/industrial_furnace/off",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bmnw:block/industrial_furnace/off",
+      "y": 270
+    }
+  }
+}

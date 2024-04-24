@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "bmnw:bismuth_crystal_vein",
+  "step": "underground_ores"
+}

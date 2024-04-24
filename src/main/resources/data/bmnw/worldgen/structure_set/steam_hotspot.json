@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "bmnw:steam_hotspot",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 446981234,
+    "spacing": 20,
+    "separation": 6,
+    "type": "minecraft:random_spread"
+  }
+}

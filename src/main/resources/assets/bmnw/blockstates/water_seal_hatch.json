@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,open=false": {
+      "model": "bmnw:block/water_seal_hatch/bottom",
+      "y": 90
+    },
+    "facing=east,open=true": {
+      "model": "bmnw:block/water_seal_hatch/open",
+      "y": 90
+    },
+    "facing=north,open=false": {
+      "model": "bmnw:block/water_seal_hatch/bottom"
+    },
+    "facing=north,open=true": {
+      "model": "bmnw:block/water_seal_hatch/open"
+    },
+    "facing=south,open=false": {
+      "model": "bmnw:block/water_seal_hatch/bottom",
+      "y": 180
+    },
+    "facing=south,open=true": {
+      "model": "bmnw:block/water_seal_hatch/open",
+      "y": 180
+    },
+    "facing=west,open=false": {
+      "model": "bmnw:block/water_seal_hatch/bottom",
+      "y": 270
+    },
+    "facing=west,open=true": {
+      "model": "bmnw:block/water_seal_hatch/open",
+      "y": 270
+    }
+  }
+}

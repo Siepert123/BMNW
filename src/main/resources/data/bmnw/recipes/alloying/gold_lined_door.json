@@ -1,0 +1,14 @@
+{
+  "type": "bmnw:alloying",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/gold"
+    },
+    {
+      "item": "minecraft:iron_door"
+    }
+  ],
+  "result": {
+    "item": "bmnw:gold_lined_door"
+  }
+}

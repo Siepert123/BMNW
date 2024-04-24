@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "group": "bmnw:raw_steel",
+  "key": {
+    "#": {
+      "item": "bmnw:raw_steel_block"
+    }
+  },
+  "pattern": [
+    "#"
+  ],
+  "result": {
+    "count": 9,
+    "item": "bmnw:raw_steel"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

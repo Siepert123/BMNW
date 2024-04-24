@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "pattern": [
+    "###",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "bmnw:valve_handle",
+    "count": 2
+  },
+  "show_notification": true
+}

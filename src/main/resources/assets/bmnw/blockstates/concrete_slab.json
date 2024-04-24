@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bmnw:block/concrete_slab/default"
+    },
+    "type=double": {
+      "model": "bmnw:block/concrete"
+    },
+    "type=top": {
+      "model": "bmnw:block/concrete_slab/top"
+    }
+  }
+}

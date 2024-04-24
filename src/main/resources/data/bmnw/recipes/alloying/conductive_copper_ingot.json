@@ -1,0 +1,14 @@
+{
+  "type": "bmnw:alloying",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "tag": "bmnw:valid_alloy_blast_furnace_ingredients/copper"
+    }
+  ],
+  "result": {
+    "item": "bmnw:conductive_copper_ingot"
+  }
+}

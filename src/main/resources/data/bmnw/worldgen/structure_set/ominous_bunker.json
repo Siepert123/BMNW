@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "bmnw:ominous_bunker",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 446981001,
+    "spacing": 20,
+    "separation": 6,
+    "type": "minecraft:random_spread"
+  }
+}

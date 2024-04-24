@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steel"
+    },
+    "H": {
+      "item": "bmnw:valve_handle"
+    }
+  },
+  "pattern": [
+    " H ",
+    "###",
+    " H "
+  ],
+  "result": {
+    "item": "bmnw:water_seal_hatch"
+  },
+  "show_notification": true
+}

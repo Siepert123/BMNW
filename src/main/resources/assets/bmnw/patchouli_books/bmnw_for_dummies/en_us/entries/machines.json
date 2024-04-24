@@ -1,0 +1,17 @@
+{
+  "name": "Basic Machines",
+  "icon": "bmnw:alloy_blast_furnace_display",
+  "category": "bmnw:the_book",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This chapter covers all early game machines.$(br2)All machines fit into one of 5 tiers:$(br)$(thing)$(l)Coal-powered$(), $(thing)$(l)Steam-powered$(), $(thing)$(l)LV$(), $(thing)$(l)MV$() & $(thing)$(l)HV$().$(br)Any machine beyond MV is covered somewhere else!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "bmnw:crafting/machines/alloy_blast_furnace",
+      "title": "Alloy Blast Furnace",
+      "text": "The $(item)$(l)Alloy Blast Furnace$() is a crucial part of the early game, making alloys as steel and conductive copper possible.$(br)However, it's a wise decision to use some electric alternative later on in the game."
+    }
+  ]
+}

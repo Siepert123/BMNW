@@ -1,0 +1,20 @@
+{
+  "category": "building",
+  "group": "bmnw:steel_block",
+  "key": {
+    "#": {
+      "item": "bmnw:steel_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "bmnw:steel_block"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:plates/steel"
+    },
+    "T": {
+      "item": "minecraft:redstone_torch"
+    },
+    "H": {
+      "item": "bmnw:thorium_232_ingot"
+    }
+  },
+  "pattern": [
+    "T T",
+    "#H#",
+    "#H#"
+  ],
+  "result": {
+    "item": "bmnw:geiger_counter"
+  },
+  "show_notification": true
+}

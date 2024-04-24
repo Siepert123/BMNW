@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "bmnw:block/bedrock_steam_hotspot",
+    "side": "block/bedrock",
+    "bottom": "bmnw:block/bedrock_steam_hotspot"
+  }
+}

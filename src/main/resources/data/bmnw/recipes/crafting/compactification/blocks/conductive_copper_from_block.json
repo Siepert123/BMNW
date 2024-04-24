@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "group": "bmnw:conductive_copper_ingot",
+  "key": {
+    "#": {
+      "item": "bmnw:conductive_copper_block"
+    }
+  },
+  "pattern": [
+    "#"
+  ],
+  "result": {
+    "count": 9,
+    "item": "bmnw:conductive_copper_ingot"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

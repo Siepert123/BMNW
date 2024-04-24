@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "group": "bmnw:raw_conductive_copper",
+  "key": {
+    "#": {
+      "item": "bmnw:raw_conductive_copper_block"
+    }
+  },
+  "pattern": [
+    "#"
+  ],
+  "result": {
+    "count": 9,
+    "item": "bmnw:raw_conductive_copper"
+  },
+  "show_notification": true,
+  "type": "minecraft:crafting_shaped"
+}

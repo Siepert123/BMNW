@@ -1,0 +1,60 @@
+{
+  "name": "The Steam System",
+  "icon": "bmnw:steam_cap",
+  "category": "bmnw:the_book",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "BMNW introduces a new energy system; the $(thing)$(l)Steam System$()!$(br)This new energy is obtained with naturally generating $(thing)$(l)Steam Hotspots$(), easily noticeable by the fact that it spews out steam particles.$(br)By building the structure seen on the right, $(item)$(l)Steam$() can be harnessed for personal gain!"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Steam extraction device",
+      "multiblock": {
+        "mapping": {
+          "0": "bmnw:steam_cap",
+          "S": "bmnw:steam_switch_small",
+          "O": "bmnw:steam_outlet"
+        },
+        "pattern": [
+          ["O"],
+          ["S"],
+          ["0"]
+        ]
+      },
+      "text": ""
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "bmnw:steam_cap"
+      },
+      "title": "Steam Cover",
+      "text": "The $(item)$(l)Steam Cover$() is a crucial part for the obtaination of $(item)$(l)Steam$(), as it is the thing that catches the steam in the first place.$(br)By placing it on a working $(thing)$(l)Steam Hotspot$(), and completing the entire structure, it will control the steam system."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "bmnw:steam_switch_small"
+      },
+      "title": "Steam Switch",
+      "text": "The $(item)$(l)Steam Switch$() is also very important, as it allows you to toggle the steam input. When a $(item)$(l)Steam Outlet$() is placed above it, and the switch is flipped up, it will release steam."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "bmnw:steam_pipe"
+      },
+      "title": "Steam Pipe",
+      "text": "The $(item)$(l)Steam Pipe$() is usually the most made steam-related component, as it is needed to tell the steam where to go.$(br2)$(l)Be aware that as of now, the steam system isn't fully done!$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "bmnw:stone_steam_hotspot"
+      },
+      "title": "Steam Hotspots",
+      "text": "The $(thing)$(l)Steam Hotspot$() is a naturally generating structure. When you encounter it, it may look like a cracked piece of bedrock. $(l)(This is due to a bug.)$()$(br)To fix it, just update it or wait a while, then a small area around it should become stone and it will start spewing out $(item)$(l)Steam$()!$(br)$(o)Creative mode players may use the Creative Source Placer to place one of these.$()"
+    }
+  ]
+}
