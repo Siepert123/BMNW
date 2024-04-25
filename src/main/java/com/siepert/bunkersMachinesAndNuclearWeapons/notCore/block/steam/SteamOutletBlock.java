@@ -2,6 +2,7 @@ package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block.steam;
 
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModBlockEntities;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.SteamCapBlockEntity;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.MyShapes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -30,6 +31,6 @@ public class SteamOutletBlock extends Block {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return Block.box(6, 0, 6, 10, 20, 10);
+        return MyShapes.STEAM_OUTLET_SHAPE;
     }
 }

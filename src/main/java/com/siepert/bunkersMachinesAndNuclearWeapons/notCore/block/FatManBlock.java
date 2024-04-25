@@ -1,6 +1,7 @@
 package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block;
 
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModSounds;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.MyShapes;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.bomb.BombUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundSource;
@@ -18,7 +19,7 @@ public class FatManBlock extends ExplosiveBlock {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return box(-2, 0, -2, 18, 20, 18);
+        return MyShapes.FAT_MAN_SHAPE;
     }
 
     @Override

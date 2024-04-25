@@ -1,6 +1,7 @@
 package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block;
 
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModSounds;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.MyShapes;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.bomb.BombUtils;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.modernUtil.NukeExplosionHelper;
 import net.minecraft.core.BlockPos;
@@ -23,7 +24,7 @@ public class LittleBoyBlock extends ExplosiveBlock {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return Block.box(4, 0, -2, 12, 8, 21);
+        return MyShapes.LITTLE_BOY_SHAPE;
     }
 
     @Override
