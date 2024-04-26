@@ -71,8 +71,6 @@ public class BMNW
     }
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
     }
 
     @Mod.EventBusSubscriber(modid = THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
