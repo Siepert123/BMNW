@@ -12,7 +12,7 @@ import org.slf4j.Logger;
 public class ModParticles {
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<ParticleType<?>> PARTICLE_TYPES =
-            DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, BMNW.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY);
 
     public static final RegistryObject<SimpleParticleType> SMOKE_PARTICLES =
             PARTICLE_TYPES.register("smoke_particles", () -> new SimpleParticleType(true));

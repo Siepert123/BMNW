@@ -1,4 +1,5 @@
 {
+  "render_type": "translucent",
   "loader": "forge:obj",
   "flip_v": true,
   "model": "bmnw:models/block/obj_models/telescope/fissure_telescope_4.obj",

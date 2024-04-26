@@ -21,8 +21,8 @@ import javax.annotation.ParametersAreNonnullByDefault;
 @MethodsReturnNonnullByDefault
 @ParametersAreNonnullByDefault
 public class AlloyingCategory implements IRecipeCategory<AlloyBlastFurnaceRecipe> {
-    public static final ResourceLocation UID = new ResourceLocation(BMNW.MOD_ID, "alloying");
-    public static final ResourceLocation TEXTURES = new ResourceLocation(BMNW.MOD_ID,
+    public static final ResourceLocation UID = new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY, "alloying");
+    public static final ResourceLocation TEXTURES = new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY,
             "textures/gui/alloy_blast_furnace.png");
     public static final RecipeType<AlloyBlastFurnaceRecipe> ALLOY_BLAST_FURNACE_RECIPE_TYPE =
             new RecipeType<>(UID, AlloyBlastFurnaceRecipe.class);

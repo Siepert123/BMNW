@@ -16,7 +16,7 @@ import org.slf4j.Logger;
 public class ModMenuTypes {
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<MenuType<?>> MENUS =
-            DeferredRegister.create(ForgeRegistries.MENU_TYPES, BMNW.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.MENU_TYPES, BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY);
     public static final RegistryObject<MenuType<AlloyBlastFurnaceMenu>> ALLOY_BLAST_FURNACE_MENU =
             registerMenuType(AlloyBlastFurnaceMenu::new, "alloy_blast_furnace_menu");
 

@@ -12,7 +12,7 @@ import org.slf4j.Logger;
 public class ModSounds {
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
-            DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, BMNW.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY);
 
     public static final RegistryObject<SoundEvent> STRONG_EXPLOSION = registerSoundEvents("event.explosion.strong");
     public static final RegistryObject<SoundEvent> VOMIT = registerSoundEvents("event.player.vomit");
@@ -37,7 +37,7 @@ public class ModSounds {
 
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
-        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(BMNW.MOD_ID, name)));
+        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY, name)));
     }
 
     public static void register(IEventBus eventBus) {

@@ -14,7 +14,7 @@ import org.slf4j.Logger;
 public class ModItems {
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, BMNW.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY);
 
     /* ITEMS ITEMS ITEMS */
 

@@ -14,7 +14,7 @@ public class ModBlockEntities {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
-            DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, BMNW.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY);
 
     public static final RegistryObject<BlockEntityType<IndustrialHeaterBlockEntity>> INDUSTRIAL_HEATER_BE =
             BLOCK_ENTITIES.register("industrial_heater_be", () ->

@@ -14,7 +14,7 @@ import org.slf4j.Logger;
 public class ModCreativeTabs {
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BMNW.MOD_ID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY);
 
     public static final RegistryObject<CreativeModeTab> BMNW_TAB = CREATIVE_MODE_TABS.register("bmnw_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PLAYSTATION.get()))

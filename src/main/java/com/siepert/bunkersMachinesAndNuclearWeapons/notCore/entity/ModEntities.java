@@ -14,7 +14,7 @@ public class ModEntities {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
-            DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, BMNW.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY);
 
 
     public static final RegistryObject<EntityType<LittleBoyEntity>> AIRBORNE_LITTLE_BOY =

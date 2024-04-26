@@ -18,7 +18,7 @@ import java.util.function.Supplier;
 public class DisplayBlocks {
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, BMNW.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY);
 
     public static final RegistryObject<Block> ALLOY_BLAST_FURNACE = registerBlock("alloy_blast_furnace_display",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).requiresCorrectToolForDrops()));

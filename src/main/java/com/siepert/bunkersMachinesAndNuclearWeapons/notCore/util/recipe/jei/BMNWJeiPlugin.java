@@ -16,7 +16,7 @@ import org.jetbrains.annotations.NotNull;
 public class BMNWJeiPlugin implements IModPlugin {
     @Override
     public ResourceLocation getPluginUid() {
-        return new ResourceLocation(BMNW.MOD_ID, "jei_plugin");
+        return new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY, "jei_plugin");
     }
 
     @Override

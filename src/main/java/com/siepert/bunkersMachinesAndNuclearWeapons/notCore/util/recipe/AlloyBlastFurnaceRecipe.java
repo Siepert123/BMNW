@@ -93,7 +93,7 @@ public class AlloyBlastFurnaceRecipe implements Recipe<SimpleContainer> {
     public static class Serializer implements RecipeSerializer<AlloyBlastFurnaceRecipe> {
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID =
-                new ResourceLocation(BMNW.MOD_ID, "alloying");
+                new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY, "alloying");
         @Override
         public @NotNull AlloyBlastFurnaceRecipe fromJson(@NotNull ResourceLocation pRecipeId, @NotNull JsonObject pSerializedRecipe) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe, "result"));
