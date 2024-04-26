@@ -57,6 +57,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SCAFFOLD = BLOCKS.register("scaffold",
             () -> new ScaffoldBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().noOcclusion()));
 
+    public static final RegistryObject<Block> TELESCOPE = BLOCKS.register("telescope",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().noOcclusion()));
+
     public static final RegistryObject<Block> STEAM_CAP = BLOCKS.register("steam_cap",
             () -> new SteamCapBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().noOcclusion()));
     public static final RegistryObject<Block> STEAM_SWITCH_SMALL = BLOCKS.register("steam_switch_small",
