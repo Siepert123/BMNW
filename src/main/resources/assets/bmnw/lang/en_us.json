@@ -149,5 +149,6 @@
   "tooltip.bmnw.radioactive_item": "§2[Radioactive]§r",
   "tooltip.bmnw.shift_for_info": "§7Press [SHIFT] for more info",
   "tooltip.bmnw.soulfire_bomb": "§b[Soulfire Bomb]§r",
-  "tooltip.bmnw.very_hot_item": "§e[Extremely Hot]§r"
+  "tooltip.bmnw.very_hot_item": "§e[Extremely Hot]§r",
+  "text.bmnw.click_to_cmd": "Click to run command"
 }

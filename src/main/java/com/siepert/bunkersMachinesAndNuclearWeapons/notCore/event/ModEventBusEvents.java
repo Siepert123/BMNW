@@ -2,6 +2,13 @@ package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.event;
 
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.BMNW;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.event.libs.PlayerRadiationHandler;
+import net.minecraft.ChatFormatting;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.ClickEvent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.HoverEvent;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.LogicalSide;
@@ -15,9 +22,25 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
         Random random = new Random();
+        Player player = event.player;
+        Level level = event.player.level();
 
         if (event.side == LogicalSide.SERVER) {
             PlayerRadiationHandler.handleRads(event, random);
+            CompoundTag playerTag = player.getPersistentData();
+            boolean hasThingied = playerTag.getBoolean("thingy");
+            if (!hasThingied) {
+                playerTag.putBoolean("thingy", true);
+                if (player.getName().getString().equals("Kaupenjoe") || player.getName().getString().equals("Dev")) {
+                    player.sendSystemMessage(Component.literal("Hey Kaupenjoe! It is recommended you install JEI and Patchouli."));
+                    player.sendSystemMessage(Component.literal("I would also recommend scrolling down in the Search tab!"));
+                    player.sendSystemMessage(Component.literal("And last but certainly not least, run the following command:"));
+                    player.sendSystemMessage(Component.literal("/give @s bmnw:playstation")
+                            .withStyle((p_214489_) -> p_214489_.withColor(ChatFormatting.GREEN)
+                                    .withClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/give @s bmnw:playstation"))
+                                    .withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.translatable("text.bmnw.click_to_cmd")))));
+                }
+            }
         }
     }
 
