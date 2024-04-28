@@ -68,6 +68,7 @@ public class BMNW
             event.accept(ModBlockItems.BEDROCK_STEAM_HOTSPOT.get());
             event.accept(ModBlockItems.STONE_STEAM_HOTSPOT.get());
             event.accept(ModBlockItems.BEDROCK_STEAM_HOTSPOT.get());
+            event.accept(ModBlockItems.TELESCOPE.get());
         }
     }
     @SubscribeEvent

@@ -114,7 +114,6 @@ public class ModCreativeTabs {
                         pOutput.accept(ModFoods.PROEMEVLAAI.get());
 
                         pOutput.accept(ModBlockItems.OBJ_TEST.get());
-                        pOutput.accept(ModBlockItems.TELESCOPE.get());
                     })
                     .build());
 
