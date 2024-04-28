@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "alloy_blast_furnace",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "I": {
+      "item": "minecraft:chiseled_stone_bricks"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    "III",
+    "IFI",
+    "###"
+  ],
+  "result": {
+    "item": "bmnw:builders_furnace"
+  },
+  "show_notification": true
+}
