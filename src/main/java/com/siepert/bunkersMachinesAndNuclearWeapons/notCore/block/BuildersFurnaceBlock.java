@@ -89,14 +89,6 @@ public class BuildersFurnaceBlock extends BaseEntityBlock {
     }
 
     @Override
-    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
-        if (pState.getValue(ACTIVE) && !pLevel.getBlockState(pPos.above()).canOcclude()) {
-            pLevel.addParticle(ParticleTypes.LAVA, pPos.getX() + 0.5, pPos.getY() + 1, pPos.getZ() + 0.5,
-                    0, 0, 0);
-        }
-    }
-
-    @Override
     public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
         if (state.getValue(ACTIVE)) {
             return 15;
