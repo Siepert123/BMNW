@@ -20,4 +20,6 @@ public class ModEventBusEvents {
             PlayerRadiationHandler.handleRads(event, random);
         }
     }
+
+
 }
