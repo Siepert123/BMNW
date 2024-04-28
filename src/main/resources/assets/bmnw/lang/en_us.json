@@ -143,5 +143,7 @@
   "tooltip.bmnw.radioactive_item": "§2[Radioactive]§r",
   "tooltip.bmnw.shift_for_info": "§7Press [SHIFT] for more info",
   "tooltip.bmnw.soulfire_bomb": "§b[Soulfire Bomb]§r",
-  "tooltip.bmnw.very_hot_item": "§e[Extremely Hot]§r"
+  "tooltip.bmnw.very_hot_item": "§e[Extremely Hot]§r",
+  "block.bmnw.builders_furnace": "Builder's Furnace",
+  "jei.bmnw.builders_smelting": "Builder's Smelting"
 }

@@ -45,6 +45,8 @@ public class ModBlockItems {
 
     public static final RegistryObject<Item> ALLOY_BLAST_FURNACE = ITEMS.register("alloy_blast_furnace",
             () -> new BlockItem(ModBlocks.ALLOY_BLAST_FURNACE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BUILDERS_FURNACE = ITEMS.register("builders_furnace",
+            () -> new BlockItem(ModBlocks.BUILDERS_FURNACE.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> FLUID_DEPOSITOR = ITEMS.register("fluid_depositor",
             () -> new TooltippedBlockItem(ModBlocks.FLUID_DEPOSITOR.get(), new Item.Properties(), Component.translatable("block.bmnw.fluid_depositor.desc"), true));

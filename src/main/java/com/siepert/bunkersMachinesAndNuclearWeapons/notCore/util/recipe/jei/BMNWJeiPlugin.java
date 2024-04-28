@@ -2,7 +2,9 @@ package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.jei;
 
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.BMNW;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.AlloyBlastFurnaceScreen;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.BuildersFurnaceScreen;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.AlloyBlastFurnaceRecipe;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.BuildersFurnaceRecipe;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.IGuiHandlerRegistration;
@@ -22,19 +24,21 @@ public class BMNWJeiPlugin implements IModPlugin {
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
         registration.addRecipeCategories(new AlloyingCategory(registration.getJeiHelpers().getGuiHelper()));
-        //TODO will be available in the second mod version
+        registration.addRecipeCategories(new BuildersSmeltingCategory(registration.getJeiHelpers().getGuiHelper()));
     }
 
     @Override
     public void registerRecipes(@NotNull IRecipeRegistration registration) {
         assert Minecraft.getInstance().level != null;
         AlloyBlastFurnaceRecipe.addAllRecipes(Minecraft.getInstance().level.getRecipeManager(), registration);
-        //TODO will be available in the second mod version
+        BuildersFurnaceRecipe.addAllRecipes(Minecraft.getInstance().level.getRecipeManager(), registration);
     }
 
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
         registration.addRecipeClickArea(AlloyBlastFurnaceScreen.class, 83, 19, 30, 45,
                 AlloyingCategory.ALLOY_BLAST_FURNACE_RECIPE_TYPE);
+        registration.addRecipeClickArea(BuildersFurnaceScreen.class, 83, 19, 30, 45,
+                BuildersSmeltingCategory.BUILDERS_FURNACE_RECIPE_TYPE);
     }
 }

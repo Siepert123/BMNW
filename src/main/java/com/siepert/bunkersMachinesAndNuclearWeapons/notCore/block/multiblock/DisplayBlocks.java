@@ -22,6 +22,8 @@ public class DisplayBlocks {
 
     public static final RegistryObject<Block> ALLOY_BLAST_FURNACE = registerBlock("alloy_blast_furnace_display",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> BUILDERS_FURNACE = registerBlock("builders_furnace_display",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).requiresCorrectToolForDrops()));
 
     //Registration
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

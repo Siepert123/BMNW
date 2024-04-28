@@ -30,6 +30,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("alloy_blast_furnace_be", () ->
                     BlockEntityType.Builder.of(AlloyBlastFurnaceBlockEntity::new,
                             ModBlocks.ALLOY_BLAST_FURNACE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<BuildersFurnaceBlockEntity>> BUILDERS_FURNACE_BE =
+            BLOCK_ENTITIES.register("builders_furnace_be", () ->
+                    BlockEntityType.Builder.of(BuildersFurnaceBlockEntity::new,
+                            ModBlocks.BUILDERS_FURNACE.get()).build(null));
     public static final RegistryObject<BlockEntityType<SteamCapBlockEntity>> STEAM_CAP_BE =
             BLOCK_ENTITIES.register("steam_cap_be", () ->
                     BlockEntityType.Builder.of(SteamCapBlockEntity::new,
