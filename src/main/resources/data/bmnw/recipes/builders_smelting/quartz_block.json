@@ -1,0 +1,11 @@
+{
+  "type": "bmnw:builders_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:smooth_quartz_block"
+  }
+}

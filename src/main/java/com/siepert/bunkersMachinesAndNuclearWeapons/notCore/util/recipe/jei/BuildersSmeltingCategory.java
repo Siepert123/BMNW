@@ -30,7 +30,7 @@ public class BuildersSmeltingCategory implements IRecipeCategory<BuildersFurnace
     private final IDrawable icon;
 
     public BuildersSmeltingCategory(IGuiHelper helper) {
-        this.background = helper.createDrawable(TEXTURES, 0, 0, 176, 81);
+        this.background = helper.createDrawable(TEXTURES, 59, 17, 73, 54);
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(DisplayBlocks.BUILDERS_FURNACE.get()));
     }
 
@@ -56,10 +56,10 @@ public class BuildersSmeltingCategory implements IRecipeCategory<BuildersFurnace
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, BuildersFurnaceRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 61, 19).addIngredients(recipe.getIngredients().get(0));
+        builder.addSlot(RecipeIngredientRole.INPUT, 2, 2).addIngredients(recipe.getIngredients().get(0));
 
-        builder.addSlot(RecipeIngredientRole.INPUT, 61, 53).addIngredients(recipe.getFuelItem());
+        builder.addSlot(RecipeIngredientRole.INPUT, 2, 36).addIngredients(recipe.getFuelItem());
 
-        builder.addSlot(RecipeIngredientRole.OUTPUT, 114, 33).addItemStack(recipe.getResultItem());
+        builder.addSlot(RecipeIngredientRole.OUTPUT, 55, 16).addItemStack(recipe.getResultItem());
     }
 }

@@ -2,18 +2,22 @@
   "variants": {
     "facing=north": {
       "model": "bmnw:block/obj_models/json/fluid_depositor",
+      "uvlock": true,
       "y": 0
     },
     "facing=east": {
       "model": "bmnw:block/obj_models/json/fluid_depositor",
+      "uvlock": true,
       "y": 90
     },
     "facing=south": {
       "model": "bmnw:block/obj_models/json/fluid_depositor",
+      "uvlock": true,
       "y": 180
     },
     "facing=west": {
       "model": "bmnw:block/obj_models/json/fluid_depositor",
+      "uvlock": true,
       "y": 270
     }
   }

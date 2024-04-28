@@ -1,0 +1,11 @@
+{
+  "type": "bmnw:builders_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:light_blue_terracotta"
+    }
+  ],
+  "result": {
+    "item": "minecraft:light_blue_glazed_terracotta"
+  }
+}

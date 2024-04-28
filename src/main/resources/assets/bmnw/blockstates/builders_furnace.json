@@ -2,34 +2,42 @@
   "variants": {
     "facing=north,active=false": {
       "model": "bmnw:block/builders_furnace/off",
+      "uvlock": true,
       "y": 0
     },
     "facing=east,active=false": {
       "model": "bmnw:block/builders_furnace/off",
+      "uvlock": true,
       "y": 90
     },
     "facing=south,active=false": {
       "model": "bmnw:block/builders_furnace/off",
+      "uvlock": true,
       "y": 180
     },
     "facing=west,active=false": {
       "model": "bmnw:block/builders_furnace/off",
+      "uvlock": true,
       "y": 270
     },
     "facing=north,active=true": {
       "model": "bmnw:block/builders_furnace/on",
+      "uvlock": true,
       "y": 0
     },
     "facing=east,active=true": {
       "model": "bmnw:block/builders_furnace/on",
+      "uvlock": true,
       "y": 90
     },
     "facing=south,active=true": {
       "model": "bmnw:block/builders_furnace/on",
+      "uvlock": true,
       "y": 180
     },
     "facing=west,active=true": {
       "model": "bmnw:block/builders_furnace/on",
+      "uvlock": true,
       "y": 270
     }
   }
