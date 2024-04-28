@@ -9,6 +9,7 @@
   "block.bmnw.blast_furnace": "Blast Furnace",
   "block.bmnw.brick_chimney": "Chimney",
   "block.bmnw.brick_chimney.desc": "§7Spewing greenhouse gases into the environment is my second favorite activity!",
+  "block.bmnw.builders_furnace": "Builder's Furnace",
   "block.bmnw.caseoh": "Fat Man",
   "block.bmnw.charred_log": "Charred Log",
   "block.bmnw.concrete": "Concrete",
@@ -52,6 +53,8 @@
   "block.bmnw.raw_bismuth_block": "Block of Bismuth Crystals",
   "block.bmnw.raw_thorium_block": "Block of Raw Thorium",
   "block.bmnw.raw_uranium_block": "Block of Raw Uranium",
+  "block.bmnw.scaffold": "Scaffold",
+  "block.bmnw.scaffold.desc": "§7I need to fix the model",
   "block.bmnw.smouldering_log": "Smouldering Log",
   "block.bmnw.steam_cap": "Steam Cover",
   "block.bmnw.steam_outlet": "Steam Outlet",
@@ -61,6 +64,8 @@
   "block.bmnw.steel_block": "Block of Steel",
   "block.bmnw.steel_reinforced_glass": "Reinforced Glass",
   "block.bmnw.stone_steam_hotspot": "Stone Steam Hotspot",
+  "block.bmnw.telescope": "Telescope",
+  "block.bmnw.telescope.desc": "§7cyan pls dont sue",
   "block.bmnw.test_particle_spawner": "Test Particle Spawner",
   "block.bmnw.thorium_block": "Block of Thorium",
   "block.bmnw.thorium_ore": "Thorium Ore",
@@ -106,6 +111,7 @@
   "item.bmnw.weak_rad_away": "Rad-Away 2000™",
   "itemGroup.bmnw.main": "BMNW",
   "jei.bmnw.alloying": "Alloying",
+  "jei.bmnw.builders_smelting": "Builder's Smelting",
   "jei.bmnw.smelting_configurable_furnace": "Smelting in Configurable Furnace",
   "sounds.bmnw.door_close": "Door closes",
   "sounds.bmnw.door_open": "Door opens",
@@ -143,7 +149,5 @@
   "tooltip.bmnw.radioactive_item": "§2[Radioactive]§r",
   "tooltip.bmnw.shift_for_info": "§7Press [SHIFT] for more info",
   "tooltip.bmnw.soulfire_bomb": "§b[Soulfire Bomb]§r",
-  "tooltip.bmnw.very_hot_item": "§e[Extremely Hot]§r",
-  "block.bmnw.builders_furnace": "Builder's Furnace",
-  "jei.bmnw.builders_smelting": "Builder's Smelting"
+  "tooltip.bmnw.very_hot_item": "§e[Extremely Hot]§r"
 }

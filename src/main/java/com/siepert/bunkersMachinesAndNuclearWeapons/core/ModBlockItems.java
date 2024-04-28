@@ -53,7 +53,9 @@ public class ModBlockItems {
     public static final RegistryObject<Item> BRICK_CHIMNEY = ITEMS.register("brick_chimney",
             () -> new TooltippedBlockItem(ModBlocks.BRICK_CHIMNEY.get(), new Item.Properties(), Component.translatable("block.bmnw.brick_chimney.desc"), true));
     public static final RegistryObject<Item> SCAFFOLD = ITEMS.register("scaffold",
-            () -> new BlockItem(ModBlocks.SCAFFOLD.get(), new Item.Properties()));
+            () -> new TooltippedBlockItem(ModBlocks.SCAFFOLD.get(), new Item.Properties(), Component.translatable("block.bmnw.scaffold.desc"), false));
+    public static final RegistryObject<Item> TELESCOPE = ITEMS.register("telescope",
+            () -> new TooltippedBlockItem(ModBlocks.TELESCOPE.get(), new Item.Properties(), Component.translatable("block.bmnw.telescope.desc"), false));
 
     public static final RegistryObject<Item> STEAM_CAP = ITEMS.register("steam_cap",
             () -> new BlockItem(ModBlocks.STEAM_CAP.get(), new Item.Properties()));

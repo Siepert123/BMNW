@@ -80,10 +80,12 @@ public class ModCreativeTabs {
                         pOutput.accept(ModBlockItems.STEAM_PIPE.get());
 
                         pOutput.accept(ModBlockItems.ALLOY_BLAST_FURNACE.get());
+                        pOutput.accept(ModBlockItems.BUILDERS_FURNACE.get());
                         pOutput.accept(AllMultipartBlocks.INDUSTRIAL_HEATER.get());
                         pOutput.accept(AllMultipartBlocks.INDUSTRIAL_FURNACE.get());
                         pOutput.accept(ModBlockItems.FLUID_DEPOSITOR.get());
                         pOutput.accept(ModBlockItems.BRICK_CHIMNEY.get());
+                        pOutput.accept(ModBlockItems.SCAFFOLD.get());
                         pOutput.accept(ModBlockItems.GAS_CENTRIFUGE.get());
 
                         pOutput.accept(ModBlockItems.HOT_NUCLEAR_REMAINS.get());
@@ -112,6 +114,7 @@ public class ModCreativeTabs {
                         pOutput.accept(ModFoods.PROEMEVLAAI.get());
 
                         pOutput.accept(ModBlockItems.OBJ_TEST.get());
+                        pOutput.accept(ModBlockItems.TELESCOPE.get());
                     })
                     .build());
 
