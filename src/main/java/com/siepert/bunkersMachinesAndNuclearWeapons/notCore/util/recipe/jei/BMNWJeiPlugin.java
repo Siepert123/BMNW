@@ -1,6 +1,7 @@
 package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.jei;
 
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.BMNW;
+import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModBlockItems;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.AlloyBlastFurnaceScreen;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.BuildersFurnaceScreen;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.AlloyBlastFurnaceRecipe;
@@ -8,10 +9,12 @@ import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.Builders
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.IGuiHandlerRegistration;
+import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
 @JeiPlugin
@@ -40,5 +43,11 @@ public class BMNWJeiPlugin implements IModPlugin {
                 AlloyingCategory.ALLOY_BLAST_FURNACE_RECIPE_TYPE);
         registration.addRecipeClickArea(BuildersFurnaceScreen.class, 83, 19, 30, 45,
                 BuildersSmeltingCategory.BUILDERS_FURNACE_RECIPE_TYPE);
+    }
+
+    @Override
+    public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
+        registration.addRecipeCatalyst(new ItemStack(ModBlockItems.ALLOY_BLAST_FURNACE.get()), AlloyingCategory.ALLOY_BLAST_FURNACE_RECIPE_TYPE);
+        registration.addRecipeCatalyst(new ItemStack(ModBlockItems.BUILDERS_FURNACE.get()), BuildersSmeltingCategory.BUILDERS_FURNACE_RECIPE_TYPE);
     }
 }

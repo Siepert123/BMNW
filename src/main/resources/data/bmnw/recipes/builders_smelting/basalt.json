@@ -2,10 +2,10 @@
   "type": "bmnw:builders_smelting",
   "ingredients": [
     {
-      "item": "minecraft:quartz_block"
+      "item": "minecraft:basalt"
     }
   ],
   "result": {
-    "item": "minecraft:smooth_quartz"
+    "item": "minecraft:smooth_basalt"
   }
 }

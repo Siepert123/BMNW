@@ -112,8 +112,15 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.CREATIVE_SOURCE_PLACER.get());
                         pOutput.accept(ModFoods.URANIUM_SANDWICH.get());
                         pOutput.accept(ModFoods.PROEMEVLAAI.get());
+                    })
+                    .build());
 
+    public static final RegistryObject<CreativeModeTab> SILLY_BMNW_TAB = CREATIVE_MODE_TABS.register("silly_bmnw_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlockItems.OBJ_TEST.get()))
+                    .title(Component.translatable("itemGroup.bmnw.silly"))
+                    .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlockItems.OBJ_TEST.get());
+                        pOutput.accept(ModBlockItems.TELESCOPE.get());
                     })
                     .build());
 
