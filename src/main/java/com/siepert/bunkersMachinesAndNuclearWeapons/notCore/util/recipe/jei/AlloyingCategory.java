@@ -59,8 +59,6 @@ public class AlloyingCategory implements IRecipeCategory<AlloyBlastFurnaceRecipe
         builder.addSlot(RecipeIngredientRole.INPUT, 66, 16).addIngredients(recipe.getIngredients().get(0));
         builder.addSlot(RecipeIngredientRole.INPUT, 66, 50).addIngredients(recipe.getIngredients().get(1));
 
-        builder.addSlot(RecipeIngredientRole.INPUT, 18, 50).addIngredients(recipe.getFuelItem());
-
         builder.addSlot(RecipeIngredientRole.OUTPUT, 114, 33).addItemStack(recipe.getResultItem());
     }
 }

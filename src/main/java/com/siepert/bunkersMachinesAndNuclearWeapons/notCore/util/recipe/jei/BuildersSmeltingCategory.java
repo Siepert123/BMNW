@@ -58,8 +58,6 @@ public class BuildersSmeltingCategory implements IRecipeCategory<BuildersFurnace
     public void setRecipe(IRecipeLayoutBuilder builder, BuildersFurnaceRecipe recipe, IFocusGroup focuses) {
         builder.addSlot(RecipeIngredientRole.INPUT, 2, 2).addIngredients(recipe.getIngredients().get(0));
 
-        builder.addSlot(RecipeIngredientRole.INPUT, 2, 36).addIngredients(recipe.getFuelItem());
-
         builder.addSlot(RecipeIngredientRole.OUTPUT, 55, 16).addItemStack(recipe.getResultItem());
     }
 }
