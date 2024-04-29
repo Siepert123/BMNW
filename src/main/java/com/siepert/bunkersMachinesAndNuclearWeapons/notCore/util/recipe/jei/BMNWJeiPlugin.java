@@ -53,6 +53,7 @@ public class BMNWJeiPlugin implements IModPlugin {
         registration.addRecipeCatalyst(new ItemStack(ModBlockItems.BUILDERS_FURNACE.get()), BuildersSmeltingCategory.BUILDERS_FURNACE_RECIPE_TYPE);
     }
 
+/*
     @Override
     public void registerRecipeTransferHandlers(IRecipeTransferRegistration registration) {
         registration.addRecipeTransferHandler(BuildersFurnaceMenu.class, ModMenuTypes.BUILDERS_FURNACE_MENU.get(),
@@ -62,4 +63,5 @@ public class BMNWJeiPlugin implements IModPlugin {
                 AlloyingCategory.ALLOY_BLAST_FURNACE_RECIPE_TYPE,
                 1,2, 3, 36);
     }
+*/
 }

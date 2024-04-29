@@ -21,9 +21,10 @@ import javax.annotation.ParametersAreNonnullByDefault;
 @MethodsReturnNonnullByDefault
 @ParametersAreNonnullByDefault
 public class BuildersSmeltingCategory implements IRecipeCategory<BuildersFurnaceRecipe> {
-    public static final ResourceLocation UID = new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY, "builders_smelting");
+    public static final ResourceLocation UID = new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY,
+            "builders_smelting");
     public static final ResourceLocation TEXTURES = new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY,
-            "textures/gui/builders_furnace.png");
+            "textures/gui/jei_helpers/builders_furnace.png");
     public static final RecipeType<BuildersFurnaceRecipe> BUILDERS_FURNACE_RECIPE_TYPE =
             new RecipeType<>(UID, BuildersFurnaceRecipe.class);
     private final IDrawable background;
