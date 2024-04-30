@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.MathUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import org.slf4j.Logger;
 
@@ -62,7 +63,6 @@ public class NukeExplosionHelper {
                         rayStrengthNow -= pLevel.getBlockState(currentBlockPos).getBlock().getExplosionResistance();
                         if (rayStrengthNow <= 0) break;
                         boundingBox = setRelativeInArray(pExpectedBoundingBox, currentPos[0], currentPos[1], currentPos[2], boundingBox, true);
-
                     }
                     rayDistanceNow += rayDistanceHelper;
                 }
