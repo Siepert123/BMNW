@@ -1,6 +1,6 @@
 package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block;
 
-import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.MyShapes;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.modernUtil.RandomUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.BlockGetter;
@@ -18,7 +18,7 @@ public class ChimneyBlock extends Block {
 
     @Override
     public VoxelShape getCollisionShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return MyShapes.CHIMNEY_COLLISION_SHAPE;
+        return RandomUtils.MyShapes.CHIMNEY_COLLISION_SHAPE;
     }
 
     @Override

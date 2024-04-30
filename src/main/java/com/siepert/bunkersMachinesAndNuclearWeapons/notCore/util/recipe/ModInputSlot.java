@@ -17,6 +17,6 @@ public class ModInputSlot extends SlotItemHandler {
 
     @Override
     public boolean mayPickup(Player playerIn) {
-        return super.mayPickup(playerIn);
+        return true;
     }
 }

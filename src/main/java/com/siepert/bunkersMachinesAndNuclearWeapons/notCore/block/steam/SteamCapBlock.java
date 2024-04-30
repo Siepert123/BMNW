@@ -3,7 +3,7 @@ package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block.steam;
 import com.google.common.collect.ImmutableMap;
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModBlockEntities;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.SteamCapBlockEntity;
-import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.MyShapes;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.modernUtil.RandomUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -34,7 +34,7 @@ public class SteamCapBlock extends BaseEntityBlock {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return MyShapes.STEAM_CAP_SHAPE;
+        return RandomUtils.MyShapes.STEAM_CAP_SHAPE;
     }
 
     @Nullable

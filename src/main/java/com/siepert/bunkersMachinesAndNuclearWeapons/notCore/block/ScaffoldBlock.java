@@ -1,6 +1,6 @@
 package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block;
 
-import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.MyShapes;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.modernUtil.RandomUtils;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -46,8 +46,8 @@ public class ScaffoldBlock extends Block {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        if (pState.getValue(AXIS) == Direction.Axis.X) return MyShapes.SCAFFOLD_X_SHAPE;
-        if (pState.getValue(AXIS) == Direction.Axis.Z) return MyShapes.SCAFFOLD_Z_SHAPE;
+        if (pState.getValue(AXIS) == Direction.Axis.X) return RandomUtils.MyShapes.SCAFFOLD_X_SHAPE;
+        if (pState.getValue(AXIS) == Direction.Axis.Z) return RandomUtils.MyShapes.SCAFFOLD_Z_SHAPE;
 
         throw new IllegalStateException("How is the axis wrong?");
     }

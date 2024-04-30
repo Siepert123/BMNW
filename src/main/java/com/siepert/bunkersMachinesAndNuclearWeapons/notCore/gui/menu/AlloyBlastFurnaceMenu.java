@@ -3,6 +3,7 @@ package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu;
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModMenuTypes;
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModBlocks;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.AlloyBlastFurnaceBlockEntity;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.ModInputSlot;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.ModResultSlot;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -33,11 +34,11 @@ public class AlloyBlastFurnaceMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
-            this.addSlot(new SlotItemHandler(handler,
+            this.addSlot(new ModInputSlot(handler,
                     AlloyBlastFurnaceBlockEntity.AlloyBlastFurnaceSlot.FUEL_SLOT, 18, 50));
-            this.addSlot(new SlotItemHandler(handler,
+            this.addSlot(new ModInputSlot(handler,
                     AlloyBlastFurnaceBlockEntity.AlloyBlastFurnaceSlot.INPUT_SLOT_1, 66, 16));
-            this.addSlot(new SlotItemHandler(handler,
+            this.addSlot(new ModInputSlot(handler,
                     AlloyBlastFurnaceBlockEntity.AlloyBlastFurnaceSlot.INPUT_SLOT_2, 66, 50));
             this.addSlot(new ModResultSlot(handler,
                     AlloyBlastFurnaceBlockEntity.AlloyBlastFurnaceSlot.OUTPUT_SLOT, 114, 33));
