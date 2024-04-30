@@ -23,14 +23,14 @@ import javax.annotation.ParametersAreNonnullByDefault;
 public class AlloyingCategory implements IRecipeCategory<AlloyBlastFurnaceRecipe> {
     public static final ResourceLocation UID = new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY, "alloying");
     public static final ResourceLocation TEXTURES = new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY,
-            "textures/gui/alloy_blast_furnace.png");
+            "textures/gui/jei_helpers/alloy_blast_furnace.png");
     public static final RecipeType<AlloyBlastFurnaceRecipe> ALLOY_BLAST_FURNACE_RECIPE_TYPE =
             new RecipeType<>(UID, AlloyBlastFurnaceRecipe.class);
     private final IDrawable background;
     private final IDrawable icon;
 
     public AlloyingCategory(IGuiHelper helper) {
-        this.background = helper.createDrawable(TEXTURES, 0, 0, 176, 81);
+        this.background = helper.createDrawable(TEXTURES, 63, 13, 70, 56);
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(DisplayBlocks.ALLOY_BLAST_FURNACE.get()));
     }
 
@@ -56,9 +56,9 @@ public class AlloyingCategory implements IRecipeCategory<AlloyBlastFurnaceRecipe
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, AlloyBlastFurnaceRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 66, 16).addIngredients(recipe.getIngredients().get(0));
-        builder.addSlot(RecipeIngredientRole.INPUT, 66, 50).addIngredients(recipe.getIngredients().get(1));
+        builder.addSlot(RecipeIngredientRole.INPUT, 3, 3).addIngredients(recipe.getIngredients().get(0));
+        builder.addSlot(RecipeIngredientRole.INPUT, 3, 37).addIngredients(recipe.getIngredients().get(1));
 
-        builder.addSlot(RecipeIngredientRole.OUTPUT, 114, 33).addItemStack(recipe.getResultItem());
+        builder.addSlot(RecipeIngredientRole.OUTPUT, 51, 20).addItemStack(recipe.getResultItem());
     }
 }

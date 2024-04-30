@@ -94,7 +94,7 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
     public final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 50;
+    private int maxProgress = 100;
     private int fuel = 0;
     private int maxFuel = 6400;
     public BuildersFurnaceBlockEntity(BlockPos pWorldPosition, BlockState pBlockState) {

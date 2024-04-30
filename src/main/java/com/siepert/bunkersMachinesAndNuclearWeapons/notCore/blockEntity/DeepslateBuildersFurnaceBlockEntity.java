@@ -5,6 +5,7 @@ import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModItems;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block.BuildersFurnaceBlock;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.BuildersFurnaceMenu;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.DeepslateBuildersFurnaceMenu;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.ModTags;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.BuildersFurnaceRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -22,6 +23,7 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -36,6 +38,7 @@ import org.jetbrains.annotations.NotNull;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
@@ -70,7 +73,14 @@ public class DeepslateBuildersFurnaceBlockEntity extends BlockEntity implements 
     }
 
     private FuelTypes getFuelItemInSlot() {
+        ItemStack[] sItems = Ingredient.of(ModTags.Items.FURNACE_SMALL_FUEL).getItems();
+        ItemStack[] mItems = Ingredient.of(ModTags.Items.FURNACE_MEDIUM_FUEL).getItems();
+        ItemStack[] lItems = Ingredient.of(ModTags.Items.FURNACE_LARGE_FUEL).getItems();
+        List<ItemStack> sItemList = Arrays.stream(sItems).toList();
+        List<ItemStack> mItemList = Arrays.stream(mItems).toList();
+        List<ItemStack> lItemList = Arrays.stream(lItems).toList();
         Item fuelItem = this.itemHandler.getStackInSlot(DeepslateBuildersFurnaceSlot.FUEL_SLOT).getItem();
+        ItemStack fuelItemStack = new ItemStack(fuelItem);
         if (sFuel.contains(fuelItem)) {
             return FuelTypes.SMALL;
         } else if (mFuel.contains(fuelItem)) {
