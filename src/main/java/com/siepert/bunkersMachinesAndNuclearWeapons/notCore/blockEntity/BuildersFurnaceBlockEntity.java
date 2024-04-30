@@ -15,6 +15,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -260,6 +261,11 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
             entity.fuel -= 200;
 
             entity.resetProgress();
+            if (new Random().nextInt(32) == 0) {
+                ExperienceOrb experienceOrb = new ExperienceOrb(level, worldPosition.getX() + 0.5, worldPosition.getY(), worldPosition.getZ() + 0.5,
+                        1);
+                level.addFreshEntity(experienceOrb);
+            }
         }
     }
     private void clearItem(int Slot, @NotNull ItemStackHandler handler) {
