@@ -4,8 +4,10 @@ import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModBlockEntities;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.BuildersFurnaceBlockEntity;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.ParticleUtils;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -25,6 +27,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -94,6 +97,18 @@ public class BuildersFurnaceBlock extends BaseEntityBlock {
             return 15;
         }
         return 0;
+    }
+
+    @Override
+    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
+        if (pState.getValue(ACTIVE)) {
+            pLevel.addParticle(ParticleTypes.LARGE_SMOKE, pPos.getX() + 0.5, pPos.getY() + 1, pPos.getZ() + 0.5,
+                    0, 0.45, 0);
+            pLevel.addParticle(ParticleTypes.LARGE_SMOKE, pPos.getX() + 0.5, pPos.getY() + 1, pPos.getZ() + 0.5,
+                    0, 0.55, 0);
+            pLevel.addParticle(ParticleTypes.LARGE_SMOKE, pPos.getX() + 0.5, pPos.getY() + 1, pPos.getZ() + 0.5,
+                    0, 0.5, 0);
+        }
     }
 
     @Nullable

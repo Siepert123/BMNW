@@ -188,20 +188,20 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
             this.fuel += 6400;
         }
         FuelTypes currentFuel = getFuelItemInSlot();
-        if (currentFuel != FuelTypes.NONE && this.maxFuel - this.fuel >= 100) {
-            if (currentFuel == FuelTypes.SMALL && this.maxFuel - this.fuel >= 100) {
-                clearItem(BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
-                this.fuel += 100;
-            } else if (currentFuel == FuelTypes.MEDIUM && this.maxFuel - this.fuel >= 400) {
-                clearItem(BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
-                this.fuel += 400;
-            } else if (currentFuel == FuelTypes.LARGE && this.maxFuel - this.fuel >= 2000) {
-                clearItem(BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
-                this.fuel += 2000;
-            } else if (currentFuel == FuelTypes.PLAYSTATION) {
-                this.fuel = this.maxFuel;
+            if (currentFuel != FuelTypes.NONE && this.maxFuel - this.fuel >= 100) {
+                if (currentFuel == FuelTypes.SMALL && this.maxFuel - this.fuel >= 100) {
+                    clearItem(BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
+                    this.fuel += 100;
+                } else if (currentFuel == FuelTypes.MEDIUM && this.maxFuel - this.fuel >= 400) {
+                    clearItem(BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
+                    this.fuel += 400;
+                } else if (currentFuel == FuelTypes.LARGE && this.maxFuel - this.fuel >= 2000) {
+                    clearItem(BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
+                    this.fuel += 2000;
+                } else if (currentFuel == FuelTypes.PLAYSTATION) {
+                    this.fuel = this.maxFuel;
+                }
             }
-        }
 
         if(hasRecipe() && hasEnoughFuel()) {
             this.progress++;

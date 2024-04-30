@@ -17,4 +17,7 @@ public class MyShapes {
             Block.box(0, 0, 0, 16, 1, 16),
             Block.box(2, 1, 2, 14, 8, 14));
     public static final VoxelShape STEAM_OUTLET_SHAPE = Block.box(6, 0, 6, 10, 20, 10);
+
+    public static final VoxelShape SCAFFOLD_X_SHAPE = Block.box(2, 0, 0, 14, 16, 16);
+    public static final VoxelShape SCAFFOLD_Z_SHAPE = Block.box(0, 0, 2, 16, 16, 14);
 }

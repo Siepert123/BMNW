@@ -1,0 +1,11 @@
+{
+  "type": "bmnw:builders_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_bricks"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cracked_nether_bricks"
+  }
+}

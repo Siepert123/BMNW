@@ -5,7 +5,9 @@ import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.Builders
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.DeepslateBuildersFurnaceBlockEntity;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -85,6 +87,18 @@ public class DeepslateBuildersFurnaceBlock extends BaseEntityBlock {
     @Override
     public BlockEntity newBlockEntity(@NotNull BlockPos pPos, @NotNull BlockState pState) {
         return new DeepslateBuildersFurnaceBlockEntity(pPos, pState);
+    }
+
+    @Override
+    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
+        if (pState.getValue(ACTIVE)) {
+            pLevel.addParticle(ParticleTypes.LARGE_SMOKE, pPos.getX() + 0.5, pPos.getY() + 1, pPos.getZ() + 0.5,
+                    0, 0.45, 0);
+            pLevel.addParticle(ParticleTypes.LARGE_SMOKE, pPos.getX() + 0.5, pPos.getY() + 1, pPos.getZ() + 0.5,
+                    0, 0.55, 0);
+            pLevel.addParticle(ParticleTypes.LARGE_SMOKE, pPos.getX() + 0.5, pPos.getY() + 1, pPos.getZ() + 0.5,
+                    0, 0.5, 0);
+        }
     }
 
     @Override
