@@ -3,6 +3,7 @@ package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu;
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModBlocks;
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModMenuTypes;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.BuildersFurnaceBlockEntity;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.DeepslateBuildersFurnaceBlockEntity;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.ModResultSlot;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -15,17 +16,17 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 import org.jetbrains.annotations.NotNull;
 
-public class BuildersFurnaceMenu extends AbstractContainerMenu {
-    private final BuildersFurnaceBlockEntity blockEntity;
+public class DeepslateBuildersFurnaceMenu extends AbstractContainerMenu {
+    private final DeepslateBuildersFurnaceBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
-    public BuildersFurnaceMenu(int pContainerId, Inventory inv, @NotNull FriendlyByteBuf extraData) {
+    public DeepslateBuildersFurnaceMenu(int pContainerId, Inventory inv, @NotNull FriendlyByteBuf extraData) {
         this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(4));
     }
-    public BuildersFurnaceMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
-        super(ModMenuTypes.BUILDERS_FURNACE_MENU.get(), pContainerId);
+    public DeepslateBuildersFurnaceMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
+        super(ModMenuTypes.DEEPSLATE_BUILDERS_FURNACE_MENU.get(), pContainerId);
         checkContainerSize(inv, 3);
-        blockEntity = ((BuildersFurnaceBlockEntity) entity);
+        blockEntity = ((DeepslateBuildersFurnaceBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
 
@@ -34,11 +35,11 @@ public class BuildersFurnaceMenu extends AbstractContainerMenu {
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
             this.addSlot(new SlotItemHandler(handler,
-                    BuildersFurnaceBlockEntity.BuildersFurnaceSlot.FUEL_SLOT, 61, 53));
+                    DeepslateBuildersFurnaceBlockEntity.DeepslateBuildersFurnaceSlot.FUEL_SLOT, 61, 53));
             this.addSlot(new SlotItemHandler(handler,
-                    BuildersFurnaceBlockEntity.BuildersFurnaceSlot.INPUT_SLOT, 61, 19));
+                    DeepslateBuildersFurnaceBlockEntity.DeepslateBuildersFurnaceSlot.INPUT_SLOT, 61, 19));
             this.addSlot(new ModResultSlot(handler,
-                    BuildersFurnaceBlockEntity.BuildersFurnaceSlot.OUTPUT_SLOT, 114, 33));
+                    DeepslateBuildersFurnaceBlockEntity.DeepslateBuildersFurnaceSlot.OUTPUT_SLOT, 114, 33));
         });
 
         addDataSlots(data);
@@ -99,8 +100,6 @@ public class BuildersFurnaceMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(@NotNull Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.BUILDERS_FURNACE.get()) ||
-                stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
                         pPlayer, ModBlocks.DEEPSLATE_BUILDERS_FURNACE.get());
     }
     private void addPlayerInventory(Inventory playerInventory) {

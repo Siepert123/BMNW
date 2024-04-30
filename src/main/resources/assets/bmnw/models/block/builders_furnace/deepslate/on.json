@@ -1,0 +1,10 @@
+{
+  "parent": "template:block/alt_orientable_block",
+  "textures": {
+    "top": "minecraft:block/polished_deepslate",
+    "bottom": "minecraft:block/deepslate_top",
+    "side": "bmnw:block/builders_furnace/deepslate/side",
+    "particle": "minecraft:block/polished_deepslate",
+    "front": "bmnw:block/builders_furnace/deepslate/front_active"
+  }
+}

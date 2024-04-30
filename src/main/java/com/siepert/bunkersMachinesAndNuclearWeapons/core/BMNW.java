@@ -7,6 +7,7 @@ import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.entity.ModEntities;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.entity.client.LittleBoyRenderer;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.AlloyBlastFurnaceScreen;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.BuildersFurnaceScreen;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.DeepslateBuildersFurnaceScreen;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.GasCentrifugeScreen;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.ModTags;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.ModRecipes;
@@ -82,6 +83,7 @@ public class BMNW
             EntityRenderers.register(ModEntities.AIRBORNE_LITTLE_BOY.get(), LittleBoyRenderer::new);
             MenuScreens.register(ModMenuTypes.ALLOY_BLAST_FURNACE_MENU.get(), AlloyBlastFurnaceScreen::new);
             MenuScreens.register(ModMenuTypes.BUILDERS_FURNACE_MENU.get(), BuildersFurnaceScreen::new);
+            MenuScreens.register(ModMenuTypes.DEEPSLATE_BUILDERS_FURNACE_MENU.get(), DeepslateBuildersFurnaceScreen::new);
         }
     }
 }

@@ -51,6 +51,8 @@ public class ModBlocks {
             () -> new AlloyBlastFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> BUILDERS_FURNACE = BLOCKS.register("builders_furnace",
             () -> new BuildersFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DEEPSLATE_BUILDERS_FURNACE = BLOCKS.register("deepslate_builders_furnace",
+            () -> new DeepslateBuildersFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> FLUID_DEPOSITOR = BLOCKS.register("fluid_depositor",
             () -> new FluidDepositorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().noOcclusion()));

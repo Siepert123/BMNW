@@ -2,9 +2,9 @@ package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity;
 
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModBlockEntities;
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModItems;
-import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModSounds;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block.BuildersFurnaceBlock;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.BuildersFurnaceMenu;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.DeepslateBuildersFurnaceMenu;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.BuildersFurnaceRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -41,12 +41,12 @@ import java.util.Optional;
 import java.util.Random;
 
 @ParametersAreNonnullByDefault
-public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvider {
-    public static class BuildersFurnaceSlot {
+public class DeepslateBuildersFurnaceBlockEntity extends BlockEntity implements MenuProvider {
+    public static class DeepslateBuildersFurnaceSlot {
         public static final int FUEL_SLOT = 0;
         public static final int INPUT_SLOT = 1;
         public static final int OUTPUT_SLOT = 2;
-        private BuildersFurnaceSlot() {}
+        private DeepslateBuildersFurnaceSlot() {}
     }
 
     static List<Item> sFuel = List.of(Blocks.ACACIA_LOG.asItem(), Blocks.BIRCH_LOG.asItem(),
@@ -70,7 +70,7 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
     }
 
     private FuelTypes getFuelItemInSlot() {
-        Item fuelItem = this.itemHandler.getStackInSlot(BuildersFurnaceSlot.FUEL_SLOT).getItem();
+        Item fuelItem = this.itemHandler.getStackInSlot(DeepslateBuildersFurnaceSlot.FUEL_SLOT).getItem();
         if (sFuel.contains(fuelItem)) {
             return FuelTypes.SMALL;
         } else if (mFuel.contains(fuelItem)) {
@@ -97,24 +97,24 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
     private int maxProgress = 50;
     private int fuel = 0;
     private int maxFuel = 6400;
-    public BuildersFurnaceBlockEntity(BlockPos pWorldPosition, BlockState pBlockState) {
-        super(ModBlockEntities.BUILDERS_FURNACE_BE.get(), pWorldPosition, pBlockState);
+    public DeepslateBuildersFurnaceBlockEntity(BlockPos pWorldPosition, BlockState pBlockState) {
+        super(ModBlockEntities.DEEPSLATE_BUILDERS_FURNACE_BE.get(), pWorldPosition, pBlockState);
         this.data = new ContainerData() {
             public int get(int index) {
                 return switch (index) {
-                    case 0 -> BuildersFurnaceBlockEntity.this.progress;
-                    case 1 -> BuildersFurnaceBlockEntity.this.maxProgress;
-                    case 2 -> BuildersFurnaceBlockEntity.this.fuel;
-                    case 3 -> BuildersFurnaceBlockEntity.this.maxFuel;
+                    case 0 -> DeepslateBuildersFurnaceBlockEntity.this.progress;
+                    case 1 -> DeepslateBuildersFurnaceBlockEntity.this.maxProgress;
+                    case 2 -> DeepslateBuildersFurnaceBlockEntity.this.fuel;
+                    case 3 -> DeepslateBuildersFurnaceBlockEntity.this.maxFuel;
                     default -> 0;
                 };
             }
             public void set(int index, int value) {
                 switch (index) {
-                    case 0 -> BuildersFurnaceBlockEntity.this.progress = value;
-                    case 1 -> BuildersFurnaceBlockEntity.this.maxProgress = value;
-                    case 2 -> BuildersFurnaceBlockEntity.this.fuel = value;
-                    case 3 -> BuildersFurnaceBlockEntity.this.maxFuel = value;
+                    case 0 -> DeepslateBuildersFurnaceBlockEntity.this.progress = value;
+                    case 1 -> DeepslateBuildersFurnaceBlockEntity.this.maxProgress = value;
+                    case 2 -> DeepslateBuildersFurnaceBlockEntity.this.fuel = value;
+                    case 3 -> DeepslateBuildersFurnaceBlockEntity.this.maxFuel = value;
                 }
             }
             public int getCount() {
@@ -124,12 +124,12 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
     }
     @Override
     public @NotNull Component getDisplayName() {
-        return Component.translatable("block.bmnw.builders_furnace");
+        return Component.translatable("block.bmnw.deepslate_builders_furnace");
     }
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, @NotNull Inventory pInventory, @NotNull Player pPlayer) {
-        return new BuildersFurnaceMenu(pContainerId, pInventory, this, this.data);
+        return new DeepslateBuildersFurnaceMenu(pContainerId, pInventory, this, this.data);
     }
     @Nonnull
     @Override
@@ -156,13 +156,6 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
         tag.putInt("builders_furnace.fuel", fuel);
         super.saveAdditional(tag);
     }
-
-    private boolean topObstructed(BlockPos pPos) {
-        Level level = this.level;
-        assert level != null;
-        return level.getBlockState(pPos.above()).canOcclude();
-    }
-
     @Override
     public void load(@NotNull CompoundTag nbt) {
         super.load(nbt);
@@ -183,20 +176,20 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
         Random random = new Random();
         boolean active = false;
         if (hasLavaBucketInFuelSlot() && this.maxFuel - this.fuel >= 6400) {
-            clearItem(BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
-            setItem(Items.BUCKET, BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler, 1);
+            clearItem(DeepslateBuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
+            setItem(Items.BUCKET, DeepslateBuildersFurnaceSlot.FUEL_SLOT, this.itemHandler, 1);
             this.fuel += 6400;
         }
         FuelTypes currentFuel = getFuelItemInSlot();
         if (currentFuel != FuelTypes.NONE && this.maxFuel - this.fuel >= 100) {
             if (currentFuel == FuelTypes.SMALL && this.maxFuel - this.fuel >= 100) {
-                clearItem(BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
+                clearItem(DeepslateBuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
                 this.fuel += 100;
             } else if (currentFuel == FuelTypes.MEDIUM && this.maxFuel - this.fuel >= 400) {
-                clearItem(BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
+                clearItem(DeepslateBuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
                 this.fuel += 400;
             } else if (currentFuel == FuelTypes.LARGE && this.maxFuel - this.fuel >= 2000) {
-                clearItem(BuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
+                clearItem(DeepslateBuildersFurnaceSlot.FUEL_SLOT, this.itemHandler);
                 this.fuel += 2000;
             } else if (currentFuel == FuelTypes.PLAYSTATION) {
                 this.fuel = this.maxFuel;
@@ -236,14 +229,14 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
                 && hasEnoughFuel();
     }
     private boolean hasLavaBucketInFuelSlot() {
-        return this.itemHandler.getStackInSlot(BuildersFurnaceSlot.FUEL_SLOT).getItem() == Items.LAVA_BUCKET;
+        return this.itemHandler.getStackInSlot(DeepslateBuildersFurnaceSlot.FUEL_SLOT).getItem() == Items.LAVA_BUCKET;
     }
 
     public boolean hasEnoughFuel() {
         return this.fuel >= 200;
     }
 
-    private void craftItem(BuildersFurnaceBlockEntity entity) {Level level = entity.level;
+    private void craftItem(DeepslateBuildersFurnaceBlockEntity entity) {Level level = entity.level;
         SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
         for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
             inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
@@ -256,7 +249,7 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
         if(match.isPresent()) {
             clearItem(1, entity.itemHandler);
 
-            setItem(match.get().getResultItem().getItem(), BuildersFurnaceSlot.OUTPUT_SLOT, entity.itemHandler, match.get().getResultItem().getCount());
+            setItem(match.get().getResultItem().getItem(), DeepslateBuildersFurnaceSlot.OUTPUT_SLOT, entity.itemHandler, match.get().getResultItem().getCount());
             entity.fuel -= 200;
 
             entity.resetProgress();
@@ -273,11 +266,11 @@ public class BuildersFurnaceBlockEntity extends BlockEntity implements MenuProvi
         this.progress = 0;
     }
     private boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack output) {
-        return inventory.getItem(BuildersFurnaceSlot.OUTPUT_SLOT).getItem() == output.getItem()
-                || inventory.getItem(BuildersFurnaceSlot.OUTPUT_SLOT).isEmpty();
+        return inventory.getItem(DeepslateBuildersFurnaceSlot.OUTPUT_SLOT).getItem() == output.getItem()
+                || inventory.getItem(DeepslateBuildersFurnaceSlot.OUTPUT_SLOT).isEmpty();
     }
     private boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory, int count) {
-        return inventory.getItem(BuildersFurnaceSlot.OUTPUT_SLOT).getMaxStackSize()
-                >= inventory.getItem(BuildersFurnaceSlot.OUTPUT_SLOT).getCount() + count;
+        return inventory.getItem(DeepslateBuildersFurnaceSlot.OUTPUT_SLOT).getMaxStackSize()
+                >= inventory.getItem(DeepslateBuildersFurnaceSlot.OUTPUT_SLOT).getCount() + count;
     }
 }

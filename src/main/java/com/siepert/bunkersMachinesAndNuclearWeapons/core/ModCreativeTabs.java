@@ -81,6 +81,7 @@ public class ModCreativeTabs {
 
                         pOutput.accept(ModBlockItems.ALLOY_BLAST_FURNACE.get());
                         pOutput.accept(ModBlockItems.BUILDERS_FURNACE.get());
+                        pOutput.accept(ModBlockItems.DEEPSLATE_BUILDERS_FURNACE.get());
                         pOutput.accept(AllMultipartBlocks.INDUSTRIAL_HEATER.get());
                         pOutput.accept(AllMultipartBlocks.INDUSTRIAL_FURNACE.get());
                         pOutput.accept(ModBlockItems.FLUID_DEPOSITOR.get());

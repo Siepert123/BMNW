@@ -47,6 +47,8 @@ public class ModBlockItems {
             () -> new BlockItem(ModBlocks.ALLOY_BLAST_FURNACE.get(), new Item.Properties()));
     public static final RegistryObject<Item> BUILDERS_FURNACE = ITEMS.register("builders_furnace",
             () -> new BlockItem(ModBlocks.BUILDERS_FURNACE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DEEPSLATE_BUILDERS_FURNACE = ITEMS.register("deepslate_builders_furnace",
+            () -> new BlockItem(ModBlocks.DEEPSLATE_BUILDERS_FURNACE.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> FLUID_DEPOSITOR = ITEMS.register("fluid_depositor",
             () -> new TooltippedBlockItem(ModBlocks.FLUID_DEPOSITOR.get(), new Item.Properties(), Component.translatable("block.bmnw.fluid_depositor.desc"), true));

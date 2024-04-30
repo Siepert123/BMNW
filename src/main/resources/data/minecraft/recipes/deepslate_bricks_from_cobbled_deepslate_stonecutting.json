@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:deepslate"
+  },
+  "result": "minecraft:deepslate_bricks",
+  "group": "building",
+  "count": 1
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:deepslate"
+  },
+  "result": "minecraft:polished_deepslate_stairs",
+  "group": "building",
+  "count": 1
+}

@@ -5,8 +5,10 @@ import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModBlockItems;
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModMenuTypes;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.AlloyBlastFurnaceMenu;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.BuildersFurnaceMenu;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.DeepslateBuildersFurnaceMenu;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.AlloyBlastFurnaceScreen;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.BuildersFurnaceScreen;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen.DeepslateBuildersFurnaceScreen;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.AlloyBlastFurnaceRecipe;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.recipe.BuildersFurnaceRecipe;
 import mezz.jei.api.IModPlugin;
@@ -45,23 +47,28 @@ public class BMNWJeiPlugin implements IModPlugin {
                 AlloyingCategory.ALLOY_BLAST_FURNACE_RECIPE_TYPE);
         registration.addRecipeClickArea(BuildersFurnaceScreen.class, 83, 19, 30, 45,
                 BuildersSmeltingCategory.BUILDERS_FURNACE_RECIPE_TYPE);
+        registration.addRecipeClickArea(DeepslateBuildersFurnaceScreen.class, 83, 19, 30, 45,
+                BuildersSmeltingCategory.BUILDERS_FURNACE_RECIPE_TYPE);
     }
 
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
         registration.addRecipeCatalyst(new ItemStack(ModBlockItems.ALLOY_BLAST_FURNACE.get()), AlloyingCategory.ALLOY_BLAST_FURNACE_RECIPE_TYPE);
         registration.addRecipeCatalyst(new ItemStack(ModBlockItems.BUILDERS_FURNACE.get()), BuildersSmeltingCategory.BUILDERS_FURNACE_RECIPE_TYPE);
+        registration.addRecipeCatalyst(new ItemStack(ModBlockItems.DEEPSLATE_BUILDERS_FURNACE.get()), BuildersSmeltingCategory.BUILDERS_FURNACE_RECIPE_TYPE);
     }
 
-/*
     @Override
     public void registerRecipeTransferHandlers(IRecipeTransferRegistration registration) {
         registration.addRecipeTransferHandler(BuildersFurnaceMenu.class, ModMenuTypes.BUILDERS_FURNACE_MENU.get(),
                 BuildersSmeltingCategory.BUILDERS_FURNACE_RECIPE_TYPE,
-                1,1, 3, 36);
+                37,1, 0, 36);
+        registration.addRecipeTransferHandler(DeepslateBuildersFurnaceMenu.class, ModMenuTypes.DEEPSLATE_BUILDERS_FURNACE_MENU.get(),
+                BuildersSmeltingCategory.BUILDERS_FURNACE_RECIPE_TYPE,
+                37,1, 0, 36);
         registration.addRecipeTransferHandler(AlloyBlastFurnaceMenu.class, ModMenuTypes.ALLOY_BLAST_FURNACE_MENU.get(),
                 AlloyingCategory.ALLOY_BLAST_FURNACE_RECIPE_TYPE,
-                1,2, 3, 36);
+                37,2, 0, 36);
+
     }
-*/
 }

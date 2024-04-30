@@ -2,7 +2,7 @@ package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.BMNW;
-import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.BuildersFurnaceMenu;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.DeepslateBuildersFurnaceMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
@@ -13,11 +13,11 @@ import net.minecraft.world.entity.player.Inventory;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 @ParametersAreNonnullByDefault
-public class BuildersFurnaceScreen extends AbstractContainerScreen<BuildersFurnaceMenu> {
+public class DeepslateBuildersFurnaceScreen extends AbstractContainerScreen<DeepslateBuildersFurnaceMenu> {
     private static final ResourceLocation TEXTURE =
             new ResourceLocation(BMNW.THE_IDENTIFIER_OF_THIS_COOL_MODIFICATION_OF_THE_BLOCK_GAME_CALLED_MINECRAFT_WHICH_WAS_MADE_IN_2009_AND_IS_STILL_RECEIVING_UPDATES_TO_THIS_DAY,
                     "textures/gui/builders_furnace.png");
-    public BuildersFurnaceScreen(BuildersFurnaceMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
+    public DeepslateBuildersFurnaceScreen(DeepslateBuildersFurnaceMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
     }
     @Override

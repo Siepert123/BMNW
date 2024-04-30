@@ -1,6 +1,7 @@
 package com.siepert.bunkersMachinesAndNuclearWeapons.core;
 
 import com.mojang.logging.LogUtils;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block.DeepslateBuildersFurnaceBlock;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.*;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block.multiblock.AllMultipartBlocks;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -34,6 +35,11 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("builders_furnace_be", () ->
                     BlockEntityType.Builder.of(BuildersFurnaceBlockEntity::new,
                             ModBlocks.BUILDERS_FURNACE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<DeepslateBuildersFurnaceBlockEntity>> DEEPSLATE_BUILDERS_FURNACE_BE =
+            BLOCK_ENTITIES.register("deepslate_builders_furnace_be", () ->
+                    BlockEntityType.Builder.of(DeepslateBuildersFurnaceBlockEntity::new,
+                            ModBlocks.DEEPSLATE_BUILDERS_FURNACE.get()).build(null));
     public static final RegistryObject<BlockEntityType<SteamCapBlockEntity>> STEAM_CAP_BE =
             BLOCK_ENTITIES.register("steam_cap_be", () ->
                     BlockEntityType.Builder.of(SteamCapBlockEntity::new,

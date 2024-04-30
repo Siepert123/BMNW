@@ -3,6 +3,7 @@ package com.siepert.bunkersMachinesAndNuclearWeapons.core;
 import com.mojang.logging.LogUtils;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.AlloyBlastFurnaceMenu;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.BuildersFurnaceMenu;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.DeepslateBuildersFurnaceMenu;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.gui.menu.GasCentrifugeMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -22,7 +23,8 @@ public class ModMenuTypes {
             registerMenuType(AlloyBlastFurnaceMenu::new, "alloy_blast_furnace_menu");
     public static final RegistryObject<MenuType<BuildersFurnaceMenu>> BUILDERS_FURNACE_MENU =
             registerMenuType(BuildersFurnaceMenu::new, "builders_furnace_menu");
-
+    public static final RegistryObject<MenuType<DeepslateBuildersFurnaceMenu>> DEEPSLATE_BUILDERS_FURNACE_MENU =
+            registerMenuType(DeepslateBuildersFurnaceMenu::new, "deepslate_builders_furnace_menu");
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name) {
         return MENUS.register(name, () -> IForgeMenuType.create(factory));
     }
