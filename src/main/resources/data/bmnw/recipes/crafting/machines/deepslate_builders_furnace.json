@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "alloy_blast_furnace",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:deepslate"
+    },
+    "P": {
+      "item": "minecraft:polished_deepslate"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PFP",
+    "###"
+  ],
+  "result": {
+    "item": "bmnw:deepslate_builders_furnace"
+  },
+  "show_notification": true
+}
