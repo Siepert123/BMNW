@@ -40,9 +40,9 @@ public class RandomUtils {
             double dist;
             BlockPos pos;
             Block air = Blocks.AIR;
-            for (int i = -radius; i <= radius; i++) {
-                for (int j = -radius; j <= radius; j++) {
-                    for (int k = radius; k >= -radius; k--) {
+            for (int i = -stage; i <= stage; i++) {
+                for (int j = -stage; j <= stage; j++) {
+                    for (int k = stage; k >= -stage; k--) {
                         pos = new BlockPos(x + i, y + k, z + j);
                         if (!(x + i == x && y + k == y && z + j == z)) {
                             if (pLevel.getBlockState(pos).getBlock() != Blocks.AIR && pLevel.getBlockState(pos).getBlock() != Blocks.BEDROCK) {
