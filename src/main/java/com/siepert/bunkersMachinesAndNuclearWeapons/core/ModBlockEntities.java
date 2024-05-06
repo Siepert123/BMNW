@@ -4,6 +4,10 @@ import com.mojang.logging.LogUtils;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block.DeepslateBuildersFurnaceBlock;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.*;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block.multiblock.AllMultipartBlocks;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.bomb.DudBlockEntity;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.bomb.FatManBlockEntity;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.bomb.LittleBoyBlockEntity;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.bomb.NuclearChargeBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -44,6 +48,24 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("steam_cap_be", () ->
                     BlockEntityType.Builder.of(SteamCapBlockEntity::new,
                             ModBlocks.STEAM_CAP.get()).build(null));
+
+    //Bomb entities
+    public static final RegistryObject<BlockEntityType<NuclearChargeBlockEntity>> NUCLEAR_CHARGE_BE =
+            BLOCK_ENTITIES.register("nuclear_charge_be", () ->
+                    BlockEntityType.Builder.of(NuclearChargeBlockEntity::new,
+                            ModBlocks.NUCLEAR_CHARGE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<LittleBoyBlockEntity>> LITTLE_BOY_BE =
+            BLOCK_ENTITIES.register("little_boy_be", () ->
+                    BlockEntityType.Builder.of(LittleBoyBlockEntity::new,
+                            ModBlocks.LITTLE_BOY.get()).build(null));
+    public static final RegistryObject<BlockEntityType<DudBlockEntity>> DUD_BE =
+            BLOCK_ENTITIES.register("dud_be", () ->
+                    BlockEntityType.Builder.of(DudBlockEntity::new,
+                            ModBlocks.DUD.get()).build(null));
+    public static final RegistryObject<BlockEntityType<FatManBlockEntity>> FAT_MAN_BE =
+            BLOCK_ENTITIES.register("fat_man_be", () ->
+                    BlockEntityType.Builder.of(FatManBlockEntity::new,
+                            ModBlocks.FAT_MAN.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         LOGGER.info("Registering BMNW Block Entities");

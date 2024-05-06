@@ -1,6 +1,10 @@
 package com.siepert.bunkersMachinesAndNuclearWeapons.notCore.block;
 
+import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModBlockEntities;
 import com.siepert.bunkersMachinesAndNuclearWeapons.core.ModSounds;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.bomb.DudBlockEntity;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.bomb.FatManBlockEntity;
+import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.blockEntity.bomb.NuclearChargeBlockEntity;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.bomb.BombUtils;
 import com.siepert.bunkersMachinesAndNuclearWeapons.notCore.util.modernUtil.RandomUtils;
 import net.minecraft.core.BlockPos;
@@ -8,13 +12,23 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.Nullable;
 
 public class FatManBlock extends ExplosiveBlock {
     public FatManBlock(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public RenderShape getRenderShape(BlockState pState) {
+        return RenderShape.MODEL;
     }
 
     @Override
@@ -24,11 +38,20 @@ public class FatManBlock extends ExplosiveBlock {
 
     @Override
     public void explode(Level pLevel, BlockPos pPos) {
-        pLevel.setBlock(pPos, Blocks.AIR.defaultBlockState(), 3);
-        pLevel.playSeededSound(null, pPos.getX(), pPos.getY(), pPos.getZ(), ModSounds.STRONG_EXPLOSION.get(), SoundSource.MASTER, 3, 1, 1024);
-        BombUtils.advancedExplosion(pLevel, pPos.getX(), pPos.getY(), pPos.getZ(), 256, true);
-        BombUtils.setAreaAflame(pLevel, pPos.getX(), pPos.getY(), pPos.getZ(), 512, 64);
-        BombUtils.setAreaAflame(pLevel, pPos.getX(), pPos.getY(), pPos.getZ(), 256, 32);
-        BombUtils.createMushroomCloud(pLevel, pPos.getX(), pPos.getY(), pPos.getZ(), 40, false);
+        BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
+        if (blockEntity instanceof FatManBlockEntity) {
+            ((FatManBlockEntity)blockEntity).initExplosion(pLevel, pPos);
+        }
+    }
+
+    @Override
+    public @Nullable BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+        return new FatManBlockEntity(pPos, pState);
+    }
+
+    @Override
+    public @Nullable <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.FAT_MAN_BE.get(),
+                (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 }

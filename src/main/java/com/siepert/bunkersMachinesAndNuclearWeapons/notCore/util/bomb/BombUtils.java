@@ -184,7 +184,7 @@ public class BombUtils {
         }
     }
 
-    private static boolean noReinforcersAbove(Level pLevel, BlockPos pPos) {
+    public static boolean noReinforcersAbove(Level pLevel, BlockPos pPos) {
         List<Block> blastProofs = List.of(ModBlocks.CONCRETE.get(),
                 ModBlocks.CONCRETE_BRICKS.get(), ModBlocks.WATER_SEAL_HATCH.get(),
                 ModBlocks.STEEL_REINFORCED_GLASS.get());
