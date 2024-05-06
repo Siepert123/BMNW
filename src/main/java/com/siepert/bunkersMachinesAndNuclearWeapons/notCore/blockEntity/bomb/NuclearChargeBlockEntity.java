@@ -64,6 +64,7 @@ public class NuclearChargeBlockEntity extends BlockEntity {
     private void serverLevelActions(Level pLevel, BlockPos pPos, BlockState pState, Random pRandom) {
         if (isExploding) {
             if (explosionCurrent > explosionCurrentMax) {
+                RandomUtils.NewBombHelper.ExplodeFinalizeNuke(pLevel, pPos, explosionCurrentMax);
                 BombUtils.setAreaAflame(pLevel, pPos.getX(), pPos.getY(), pPos.getZ(), 64, 32);
                 BombUtils.setAreaAflame(pLevel, pPos.getX(), pPos.getY(), pPos.getZ(), 32, 32);
                 isExploding = false;

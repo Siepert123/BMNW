@@ -77,7 +77,7 @@ public class RandomUtils {
                             if (pLevel.getBlockState(pos).getBlock() != Blocks.AIR && pLevel.getBlockState(pos).getBlock() != Blocks.BEDROCK) {
                                 h = Math.sqrt(i * i + j * j);
                                 dist = Math.sqrt(h * h + (k * k * 2));
-                                if (dist > radius - 1 && noReinforcersAbove(pLevel, pos)) {
+                                if (dist > radius - 5 && noReinforcersAbove(pLevel, pos)) {
                                     pLevel.setBlock(pos, ModBlocks.HOT_NUCLEAR_REMAINS.get().defaultBlockState(), 3);
                                 }
                             }

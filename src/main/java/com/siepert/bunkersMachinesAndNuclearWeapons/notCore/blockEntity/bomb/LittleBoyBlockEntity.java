@@ -58,6 +58,7 @@ public class LittleBoyBlockEntity extends BlockEntity {
     private void serverLevelActions(Level pLevel, BlockPos pPos, BlockState pState, Random pRandom) {
         if (isExploding) {
             if (explosionCurrent > explosionCurrentMax) {
+                RandomUtils.NewBombHelper.ExplodeFinalizeNuke(pLevel, pPos, explosionCurrentMax);
                 BombUtils.setAreaAflame(pLevel, pPos.getX(), pPos.getY(), pPos.getZ(), 256, 64);
                 BombUtils.setAreaAflame(pLevel, pPos.getX(), pPos.getY(), pPos.getZ(), 128, 64);
                 isExploding = false;
